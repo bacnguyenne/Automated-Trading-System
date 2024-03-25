@@ -1,2 +1,7 @@
 # Automated-Trading-System
-### Lỏ điên zzz
+
+# REAL-TIME Price in Python
+
+## General WSS info
+
+- The base endpoint is: ``
