@@ -36,7 +36,9 @@ matplotlib-inline==0.1.6
 more-itertools==10.2.0
 multidict==6.0.5
 nest-asyncio==1.6.0
+numpy==1.26.4
 packaging==24.0
+pandas==2.2.1
 parso==0.8.3
 pexpect==4.9.0
 platformdirs==4.2.0
@@ -51,7 +53,6 @@ pycryptodome==3.20.0
 Pygments==2.17.2
 pyOpenSSL==24.1.0
 PySocks==1.7.1
-python-binance==1.0.19
 python-dateutil==2.9.0.post0
 pytz==2024.1
 pyzmq==25.1.2
@@ -64,11 +65,9 @@ stack-data==0.6.3
 tornado==6.4
 traitlets==5.14.2
 typing_extensions==4.10.0
+tzdata==2024.1
 tzlocal==5.2
 ujson==5.9.0
-unicorn-binance-rest-api==2.2.1
-unicorn-binance-websocket-api==2.2.0
-unicorn-fy==1.14.1
 urllib3==2.2.1
 wcwidth==0.2.13
 websocket-client==1.7.0
