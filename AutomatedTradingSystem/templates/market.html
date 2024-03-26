@@ -10,7 +10,7 @@
     <meta name="theme-color" content="#0d0d0d">
     <meta name="description" content="Web site created using create-react-app">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&amp;display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>IUH Trading</title>
     <!-- <script type="module" crossorigin="" src="{%static 'index.js' %}"></script> -->
     <link rel="stylesheet" crossorigin="" href="{%static 'style.css' %}">
@@ -103,59 +103,25 @@
                                     </g>
                                 </svg>
                                 <div>Wallet</div>
-                            </button></a><a href="/guides"><button class=""><svg xmlns="http://www.w3.org/2000/svg"
-                                    width="20" height="20" fill="none" class="svg">
-                                    <path stroke="#2C406E" stroke-opacity="0.7" stroke-width="1.5"
-                                        d="M5.98 5.98h.01m-4.873-.34-.043.818C.992 8.023.951 8.806 1.1 9.547c.132.656.373 1.285.714 1.861.384.65.939 1.204 2.047 2.313l2.412 2.412c1.311 1.31 1.966 1.966 2.67 2.324a4.98 4.98 0 0 0 4.52 0c.704-.358 1.36-1.013 2.67-2.324 1.31-1.31 1.966-1.966 2.324-2.67a4.98 4.98 0 0 0 0-4.52c-.358-.704-1.013-1.359-2.324-2.67L13.72 3.861c-1.109-1.108-1.663-1.663-2.313-2.047A5.976 5.976 0 0 0 9.547 1.1c-.74-.15-1.524-.108-3.09-.026l-.817.043c-1.519.08-2.278.12-2.866.436a2.988 2.988 0 0 0-1.221 1.22c-.316.589-.356 1.348-.436 2.867Zm5.35.328a.498.498 0 1 1-.996 0 .498.498 0 0 1 .996 0Z">
-                                    </path>
-                                </svg>
-                                <div>Guides</div>
-                            </button></a><a href="/community"><button class=""><svg xmlns="http://www.w3.org/2000/svg"
-                                    width="20" height="20" fill="none" class="svg">
-                                    <path stroke="#2C406E" stroke-opacity="0.7" stroke-width="1.5"
-                                        d="M10 2.354a4 4 0 1 1 0 5.292M13 19H1v-1a6 6 0 1 1 12 0zm0 0h6v-1a6 6 0 0 0-9-5.197M11 5a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z">
-                                    </path>
-                                </svg>
-                                <div>Community</div>
-                            </button></a><a href="/support"><button class=""><svg xmlns="http://www.w3.org/2000/svg"
-                                    width="20" height="18" fill="none" class="svg">
-                                    <path stroke="#2C406E" stroke-opacity="0.7" stroke-width="1.5"
-                                        d="M10 17.198c.9 0 9-4.52 9-10.85 0-4.894-6.154-7.454-9-3.165C7.149-1.114 1 1.45 1 6.348c0 6.33 8.1 10.85 9 10.85Z">
-                                    </path>
-                                </svg>
-                                <div>Support</div>
                             </button></a></nav>
-                    <div class="upgreide-ad shadow" style="margin-top: 200px;">
-                        <div>
-                            <h5>UPGRADE TO</h5>
-                            <h3>Professional Tier</h3>
-                        </div><img
-                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAzCAYAAADVY1sUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAfOSURBVHgB7VhbbBxnFf7murP3XXt3bSdObCehDilxiqKkKqBCQBRC6QNCQiIIISQkHnigqnhA4iGOECAeUIuEoj7AQysuUiUSiaKERiq0btIqceLNxU7t+LK247t37b3Ozn04/2+p6uusXakP+1mr2VnP5Xz/+c75zgzQRhtttNFGG2208amDgE8IhfzLKd90vm03Sk95rrnfNo2MpTdqtUpt0Wi4IyMja+/+7vKtEvYIe05k5c4r33Dc2i8dS/+K79jw6Q6ubcFzXdhGE77v0daGoeu+Gg69pmipC5//zqvz2CX2jEhp+q/HmrWVi/DtLzuWibn8BCbvFbAwX+REohEFiqIimYnj8JP70ZmL0e8ORFFGIpN96djZP72MXWBPiKzcv/iS59Z/69l6qHB9FB/eyCPZm0XP0X6kc0mIskhB23AsC1sbZRQXNrG2Wseprz4JNaIBIhBJdl44/vzFYbSIXRNZGP3NecF3h51GBXNX/g01k0Pv6ZOQNA2eQzKyTfhMVqbBiXiuA9+hj2th6k4BciyBvsFuSLKMzMGjLw584fwf0QJ2ReTxzV+f90Vv2K1sYDs/guTnTiOcOwCHJOMLInyPETDRrGxB0UJwiVizug2fbus5LmQJWJ5ZQTjdgUxPClo0he7B5090HDp7HwEhokUs3f3L9zzfGXabZTRmbiL3xW8i0t0H12NXlYmEg+Z2mbY+QtEorwXagVgqwqqU+RJatofeJ/ZBNOowDQuWWUd1894raAEtEVkc+8c+W5/5ve8Y8B/fQMeJZyHTaroeRUeZEET6CBIimS4oIZVnxTJ02JUaDCKX6CIpcWI+nSMid6QHjVKZ75v19TONxWv7EBAtEWmW7/6MVrjfW5+A1PkERC1BsnG5lBjYVpRDvA70pSlMXnkb1SJlRxWhDQ7CpbTFUYG5scYzQ30AmVxih5ilo7w9dQ4BEZhI/vKLKUUVf+w2a3DqJWjdR+CQ9l2XkRB4MQuCvOMXxQLc5Uk89a3TgF7B6vQK1Y8NV9ex+aiAjr4egKTHzpMoc/DAz3NN/RkERGAiAhov0JL32OuziPQP8dVlhc1W0/dZGYvwPBs2I+oriB07CQsatGwGVO+obVQAVYUXisF0iDid43keBFmBHJIhSjKrsacREMGJiPguk4PXqEJJdvFOxAyQ0sCNj+igOHEPD299CDESR9NWuNSY+WnpBCIJjX/XixVqwy6dRtRF1uHomkxjAsuqu3/8jTfUIHEFJiJpkQHWs0VFogxQ8GwM4XKp0Y8C6oVxeGvTyMUdLD4sMLUQUReS4NNCy3BJSapbhRYP82wwKfEPWxzyF0lSKEMu6rFCLkhcQYkIpmked40q1GSKk7BNi8vCp/HDWJ6CtfAQnae+hPThQxB8C4uTy3BIfo634x1hUk6tMA8t00Gy9HmNsKxQoUGNp0haEtUR+U25aQQJLBCR54a6sol4WGADIKVmhxllobi4AjYgOpaA9NBJ+NSxLMNA9mA3RM8iKXnceYs3xzH79iiccBqOopGcvJ1r0D99FgplTSAi1e1q48y54WKA0CAHOVj3Dduj1ZUoULu0BjXHOpWHZDZJq2jRfje12XVofoNFBnZs16EeOE2LFQDSWRnygROwfZEbpyTtDBakMJKqyrMh0N/co8VxBESgjFx/UNmu1w3LJzNjLZf1MNdyYFI7nbh2G+uP1yHFk9SZSjR+eODNjPkLBRySXHL+TtAITHclw5TEnSIX2K5EMnX4vFXXBdx4fzKPgAhc7KViZZYtt6FTp/Kp69C8pG8zVzbRmY1zPxHjCRh1k8uJ0yVjNJdmIYSjPBMCMRSlj5GhOlHDGjfRkXfGsd1svo6ACCQtBsOy/kV+8VklnYW+tkIZSCOaSaNzsJ8c2sHS7XGU/Aj6P5ODSJqpbZZRn5xG5kgXYqEo/KbD60oiEhJJSVVDvC5Eahj1uoM7Y7Njr781+QECQkJAWHqzdvpE70/CqTiqC4uId3XQsEcdJ6RgbmwKIbdJ02wMly4/wPV3H6FWrGLg+EEk9pPnuLx0OAHWqQQiKtEIrIYj0GIpXP3PQyw+3vz++PzWAgKipTH+zxeeu/LMqf6znkUeUi0i3N2FRp0NhiZkCswjqbBRxDbtj+7A5MNkxCAp8s5xRCQci9F0HMfN26t461r+D3/778wv0AJaGhrzdyd+uLK8VSQbgxuKw9wqQ9PIIKkALCp+i7zFsV3eV9nKK6rCp2CB14VERBT+TCLTqCJRt7r3YB1Xr+ant0L4FVpEYGkxjE7Wmpro53u7oueiCU2kJ28azyvQaLqV2dhOmWIzGJ+/wLyOSJFnqFqUb2VF5sWu0FPkyAdLuPzm/Rmqu6+/+b+5lt+qtESEYWyqOEc2/97A/viZUEhOMcvzqC27lA0trFLNqBSwwpXFvvusxZLXMFkxidXqNv5+aRzvvL/wT9MVX7g6Or+OXWDXz+z9Ka3/pz8YGh4c6PhRNh3i9cFNU9kpaDaCsJbMssDMbqPUwHv5ddy4s7pGpX7h1tTqq9gD7NnroMPZ0JGvPX3g54cPJJ6VJXEoHgvRDCnAJuPc3NKxvNHEwlodc8uNEbKRS6aM1+bny2XsET6RN419fZke2XSOUlkf9EQvSrZpUjYWPN29TbHvWfBttNFGG2200UYbbbQRCP8HSknoSNjgvb4AAAAASUVORK5CYII="
-                            alt="Upbgreide Coin">
-                    </div>
+
                 </div>
             </aside>
             <div class="content">
                 <header class="mobile">
                     <h1>Markets</h1>
-                    <div class="user-panel">
-                        <div><img
-                                src="data:image/svg+xml,%3csvg%20width='13'%20height='13'%20viewBox='0%200%2013%2013'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3ccircle%20cx='5.58407'%20cy='5.58333'%20r='4.58333'%20stroke='%232C406E'%20stroke-width='1.2'%20strokeLinecap='round'/%3e%3cpath%20d='M12.0007%2012L9.25073%209.25'%20stroke='%232C406E'%20stroke-width='1.2'%20strokeLinecap='round'/%3e%3c/svg%3e"
-                                alt="Search"><img
-                                src="data:image/svg+xml,%3csvg%20width='17'%20height='14'%20viewBox='0%200%2017%2014'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='1.00073'%20y='1'%20width='15'%20height='12'%20rx='2'%20stroke='%232C406E'%20stroke-width='1.2'/%3e%3cpath%20d='M1.00073%204L7.55956%207.49804C8.14779%207.81176%208.85367%207.81176%209.44191%207.49804L16.0007%204'%20stroke='%232C406E'%20stroke-width='1.2'/%3e%3c/svg%3e"
-                                alt="Messages"><img
-                                src="data:image/svg+xml,%3csvg%20width='12'%20height='16'%20viewBox='0%200%2012%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M6.79196%200.791224C6.79196%200.354243%206.43772%200%206.00074%200C5.56376%200%205.20951%200.354243%205.20951%200.791224V1.38464H4.76847C3.00794%201.38464%201.55082%202.75347%201.44092%204.51057L1.26606%207.30632C1.19939%208.37226%200.841531%209.39947%200.231449%2010.2761C-0.319782%2011.0681%200.170951%2012.1621%201.12907%2012.2771L3.82487%2012.6005V13.4508C3.82487%2014.6525%204.79904%2015.6267%206.00074%2015.6267C7.20243%2015.6267%208.1766%2014.6525%208.1766%2013.4508V12.6005L10.8724%2012.2771C11.8305%2012.1621%2012.3212%2011.0681%2011.77%2010.2761C11.1599%209.39947%2010.8021%208.37226%2010.7354%207.30632L10.5605%204.51057C10.4506%202.75347%208.99352%201.38464%207.23299%201.38464H6.79196V0.791224ZM4.76847%202.57148C3.63464%202.57148%202.69622%203.45304%202.62545%204.58465L2.45058%207.38041C2.37036%208.66309%201.93973%209.89917%201.20559%2010.954C1.16575%2011.0113%201.20122%2011.0904%201.27047%2011.0987L4.2278%2011.4535C5.40553%2011.5949%206.59594%2011.5949%207.77366%2011.4535L10.731%2011.0987C10.8002%2011.0904%2010.8357%2011.0113%2010.7959%2010.954C10.0617%209.89917%209.63111%208.66309%209.55088%207.38041L9.37602%204.58465C9.30524%203.45304%208.36682%202.57148%207.23299%202.57148H4.76847ZM6.00074%2014.4398C5.45451%2014.4398%205.01171%2013.997%205.01171%2013.4508V12.8574H6.98977V13.4508C6.98977%2013.997%206.54696%2014.4398%206.00074%2014.4398Z'%20fill='%232C406E'/%3e%3c/svg%3e"
-                                alt="Notifications"></div>
+                    <div class="user-panel">                     
                         <div>
-                            <h6>EN/USD</h6><img
-                                src="data:image/svg+xml,%3csvg%20width='3'%20height='3'%20viewBox='0%200%203%203'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M0.124599%200.837779L1.20671%202.1067C1.36965%202.29777%201.63286%202.29777%201.7958%202.1067L2.8779%200.837779C3.14111%200.529124%202.9531%200%202.58126%200H0.417057C0.0452184%200%20-0.138612%200.529124%200.124599%200.837779Z'%20fill='%232C406E'/%3e%3c/svg%3e"
-                                alt="Language">
-                        </div>
-                        <div><img
-                                src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M10.8369%2010.8263C12.2318%2011.1113%2013.6798%2010.9801%2015.0007%2010.4489C14.46%2011.7945%2013.529%2012.9475%2012.3274%2013.7595C11.1259%2014.5716%209.70889%2015.0055%208.2587%2015.0054C6.57228%2015.0036%204.93902%2014.4152%203.6389%2013.3411C2.33878%2012.267%201.45277%2010.7741%201.13276%209.11837C0.812748%207.46259%201.07867%205.74707%201.88493%204.26588C2.6912%202.78469%203.98759%201.63008%205.55187%201C5.02068%202.32095%204.88941%203.76888%205.1744%205.16382C5.45939%206.55876%206.14805%207.83919%207.1548%208.84593C8.16155%209.85268%209.44197%2010.5413%2010.8369%2010.8263Z'%20stroke='%232C406E'%20stroke-width='1.2'%20strokeLinecap='round'%20strokeLinejoin='round'/%3e%3c/svg%3e"
-                                alt="Theme Dark"><img
-                                src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8%201V1.77778M8%2014.2222V15M15%208H14.2222M1.77778%208H1M12.9498%2012.9498L12.3999%2012.3999M3.60011%203.60011L3.05022%203.05022M12.9498%203.05022L12.3999%203.60011M3.60011%2012.3999L3.05022%2012.9498M11.1111%208C11.1111%208.82512%2010.7833%209.61644%2010.1999%2010.1999C9.61644%2010.7833%208.82512%2011.1111%208%2011.1111C7.17488%2011.1111%206.38356%2010.7833%205.80011%2010.1999C5.21667%209.61644%204.88889%208.82512%204.88889%208C4.88889%207.17488%205.21667%206.38356%205.80011%205.80011C6.38356%205.21667%207.17488%204.88889%208%204.88889C8.82512%204.88889%209.61644%205.21667%2010.1999%205.80011C10.7833%206.38356%2011.1111%207.17488%2011.1111%208Z'%20stroke='white'%20stroke-width='1.2'%20strokeLinecap='round'%20strokeLinejoin='round'/%3e%3c/svg%3e"
-                                alt="Theme Light"><img
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                <use xlink:href="#sign-in"/>
+                              </svg>
+                            
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                <use xlink:href="#sign-up"/>
+                              </svg>
+                            <button><i class="fas fa-user-plus"></i> Sign Up</button>
+                            <button><i class="fas fa-sign-in-alt"></i> Sign In</button>
+                            <img
                                 src="data:image/svg+xml,%3csvg%20width='16'%20height='17'%20viewBox='0%200%2016%2017'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8%201L3%201C2.46957%201%201.96086%201.22576%201.58579%201.62763C1.21071%202.02949%201%202.57454%201%203.14286V13.8571C1%2014.4255%201.21071%2014.9705%201.58579%2015.3724C1.96086%2015.7742%202.46957%2016%203%2016H8M12%2011.7143L15%208.5M15%208.5L12%205.28571M15%208.5H5'%20stroke='%232C406E'%20stroke-width='1.2'%20strokeLinecap='round'%20strokeLinejoin='round'/%3e%3c/svg%3e"
                                 alt="Exit"></div>
                     </div><button class="burger-menu"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
@@ -172,12 +138,10 @@
                     <article class="ad-sing-up"
                         style="background-image: url(&quot;/assets/bg-advertisement-BrvVrx3N.jpg&quot;);">
                         <div>
-                            <h3>Sing Up to AI Broker Tiers and enjoy all the perks</h3>
-                            <p>Unlock exclusive access to premium content, personalized insights, and unique perks by
-                                subscribing to AI Broker tiers now !</p>
-                        </div><button>Sing Up Now <img
-                                src="data:image/svg+xml,%3csvg%20width='12'%20height='12'%20viewBox='0%200%2012%2012'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M4.75%202.25H2.25C1.91848%202.25%201.60054%202.3817%201.36612%202.61612C1.1317%202.85054%201%203.16848%201%203.5V9.75C1%2010.0815%201.1317%2010.3995%201.36612%2010.6339C1.60054%2010.8683%201.91848%2011%202.25%2011H8.5C8.83152%2011%209.14946%2010.8683%209.38388%2010.6339C9.6183%2010.3995%209.75%2010.0815%209.75%209.75V7.25M7.25%201H11M11%201V4.75M11%201L4.75%207.25'%20stroke='white'%20stroke-width='1.5'%20strokeLinecap='round'%20strokeLinejoin='round'/%3e%3c/svg%3e"
-                                alt="Button Click"></button>
+                            <h3>Sign Up to IUH Trading and enjoy all the perks</h3>
+                        </div><a href="/register"><button>Sign Up Now <img
+                            src="data:image/svg+xml,%3csvg%20width='12'%20height='12'%20viewBox='0%200%2012%2012'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M4.75%202.25H2.25C1.91848%202.25%201.60054%202.3817%201.36612%202.61612C1.1317%202.85054%201%203.16848%201%203.5V9.75C1%2010.0815%201.1317%2010.3995%201.36612%2010.6339C1.60054%2010.8683%201.91848%2011%202.25%2011H8.5C8.83152%2011%209.14946%2010.8683%209.38388%2010.6339C9.6183%2010.3995%209.75%2010.0815%209.75%209.75V7.25M7.25%201H11M11%201V4.75M11%201L4.75%207.25'%20stroke='white'%20stroke-width='1.5'%20strokeLinecap='round'%20strokeLinejoin='round'/%3e%3c/svg%3e"
+                            alt="Button Click"></button></a>
                     </article>
                     <div class="ant-row css-2q8sxy"
                         style="margin-left: -16px; margin-right: -16px; row-gap: 32px; margin-top: 40px;">
