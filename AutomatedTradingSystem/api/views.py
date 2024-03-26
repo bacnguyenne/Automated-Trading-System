@@ -83,4 +83,4 @@ def register_view(request):
 from django.http import HttpResponse
 
 def home(request):
-    return render(request, 'home.html')
+    return render(request, 'market.html')
