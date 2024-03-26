@@ -40,11 +40,7 @@ def login_view(request):
         user = authenticate(request, username=username, password=password)
         if user is not None:
             login(request, user)
-            return JsonResponse({
-                'message': 'Logged in successfully',
-                'username': username,
-                'is_admin': user.is_superuser
-            })
+            return render(request, 'market.html')
         else:
             return JsonResponse({"message": "Invalid username or password"}, status=400)
     else:
