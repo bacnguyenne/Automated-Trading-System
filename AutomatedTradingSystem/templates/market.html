@@ -11,7 +11,7 @@
     <meta name="description" content="Web site created using create-react-app">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <title>IUH Trading</title>
+    <title style="font-size: 300%;">IUH Trading</title>
     <!-- <script type="module" crossorigin="" src="{%static 'index.js' %}"></script> -->
     <link rel="stylesheet" crossorigin="" href="{%static 'style.css' %}">
     <style class="darkreader darkreader--override" media="screen"></style>
@@ -33,22 +33,22 @@
         <div class="app">
             <aside class="sidebar ">
                 <div class="sidebar__wrapper ">
-                    <div class="sidebar__header"><a href="/"><img src="" alt="Logo"></a>
-                        <h2>IUH TRADING</h2>
+                    <div class="sidebar__header"><a href="/"><img src="{% static 'iuh_logo.png' %}" alt="Logo"></a>
+                        <h2 style="font-size: 180%;">IUH TRADING</h2>
                     </div>
                     <div class="sidebar__card"
                         style="background-image: url(&quot;/assets/bg-cards-user-ik8j1yp-.png&quot;);"><img
-                            src="{% static 'iuh_logo.png' %}" alt="user">
-                        <p>Paul Nichols</p>
+                            src="{% static 'meo.jpg' %}" alt="user"  style="border-radius: 50%;">
+                        <p>Jack 5 milion</p>
                         <div>
                             <p>Verified</p><img
                                 src="data:image/svg+xml,%3csvg%20width='14'%20height='14'%20viewBox='0%200%2014%2014'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M4.98356%207L6.32785%208.3443L9.01644%205.6557M4.2005%202.09131C4.68264%202.05282%205.14036%201.86325%205.5085%201.54955C5.9245%201.19484%206.4533%201%207%201C7.5467%201%208.0755%201.19484%208.4915%201.54955C8.85964%201.86325%209.31736%202.05282%209.7995%202.09131C10.3444%202.13466%2010.8561%202.3708%2011.2426%202.75735C11.6292%203.1439%2011.8653%203.65556%2011.9087%204.2005C11.9472%204.68264%2012.1368%205.14036%2012.4504%205.5085C12.8052%205.9245%2013%206.4533%2013%207C13%207.5467%2012.8052%208.0755%2012.4504%208.4915C12.1368%208.85964%2011.9472%209.31736%2011.9087%209.7995C11.8653%2010.3444%2011.6292%2010.8561%2011.2426%2011.2426C10.8561%2011.6292%2010.3444%2011.8653%209.7995%2011.9087C9.31736%2011.9472%208.85964%2012.1368%208.4915%2012.4504C8.0755%2012.8052%207.5467%2013%207%2013C6.4533%2013%205.9245%2012.8052%205.5085%2012.4504C5.14036%2012.1368%204.68264%2011.9472%204.2005%2011.9087C3.65556%2011.8653%203.1439%2011.6292%202.75735%2011.2426C2.3708%2010.8561%202.13466%2010.3444%202.09131%209.7995C2.05282%209.31736%201.86325%208.85964%201.54955%208.4915C1.19484%208.0755%201%207.5467%201%207C1%206.4533%201.19484%205.9245%201.54955%205.5085C1.86325%205.14036%202.05282%204.68264%202.09131%204.2005C2.13466%203.65556%202.3708%203.1439%202.75735%202.75735C3.1439%202.3708%203.65556%202.13466%204.2005%202.09131Z'%20stroke='%2303A66D'%20stroke-width='1.2'%20strokeLinecap='round'%20strokeLinejoin='round'/%3e%3c/svg%3e"
                                 alt="Checked User">
                         </div>
                     </div>
-                    <div class="all-amount">
+                    <div class="all-amount" style="margin-top: 80px;">
                         <p>Total Balance</p>
-                        <h3>$15,453.05 <span>+9.34%</span></h3>
+                        <h3>$5,000,000 <span>+9.34%</span></h3>
                     </div>
                     <nav><a href="/"><button class="active"><svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve"
                                     viewBox="0 0 19.5 17.2" class="svg svg-active">
@@ -119,8 +119,8 @@
                               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
                                 <use xlink:href="#sign-up"/>
                               </svg>
-                            <button><i class="fas fa-user-plus"></i> Sign Up</button>
-                            <button><i class="fas fa-sign-in-alt"></i> Sign In</button>
+                            {% comment %} <button><i class="fas fa-user-plus"></i> Sign Up</button>
+                            <button><i class="fas fa-sign-in-alt"></i> Sign In</button> {% endcomment %}
                             <img
                                 src="data:image/svg+xml,%3csvg%20width='16'%20height='17'%20viewBox='0%200%2016%2017'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8%201L3%201C2.46957%201%201.96086%201.22576%201.58579%201.62763C1.21071%202.02949%201%202.57454%201%203.14286V13.8571C1%2014.4255%201.21071%2014.9705%201.58579%2015.3724C1.96086%2015.7742%202.46957%2016%203%2016H8M12%2011.7143L15%208.5M15%208.5L12%205.28571M15%208.5H5'%20stroke='%232C406E'%20stroke-width='1.2'%20strokeLinecap='round'%20strokeLinejoin='round'/%3e%3c/svg%3e"
                                 alt="Exit"></div>
@@ -135,13 +135,13 @@
                         </svg></button>
                 </header>
                 <main>
-                    <article class="ad-sing-up"
+                    {% comment %} <article class="ad-sing-up"
                         style="background-image: url(&quot;/assets/bg-advertisement-BrvVrx3N.jpg&quot;);">
                         <div>
                             <h3>Sign Up to IUH Trading and enjoy all the perks</h3>
                         </div><a href="/register"><button>Sign Up Now <img
                             src="data:image/svg+xml,%3csvg%20width='12'%20height='12'%20viewBox='0%200%2012%2012'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M4.75%202.25H2.25C1.91848%202.25%201.60054%202.3817%201.36612%202.61612C1.1317%202.85054%201%203.16848%201%203.5V9.75C1%2010.0815%201.1317%2010.3995%201.36612%2010.6339C1.60054%2010.8683%201.91848%2011%202.25%2011H8.5C8.83152%2011%209.14946%2010.8683%209.38388%2010.6339C9.6183%2010.3995%209.75%2010.0815%209.75%209.75V7.25M7.25%201H11M11%201V4.75M11%201L4.75%207.25'%20stroke='white'%20stroke-width='1.5'%20strokeLinecap='round'%20strokeLinejoin='round'/%3e%3c/svg%3e"
-                            alt="Button Click"></button></a>
+                            alt="Button Click"></button></a> {% endcomment %}
                     </article>
                     <div class="ant-row css-2q8sxy"
                         style="margin-left: -16px; margin-right: -16px; row-gap: 32px; margin-top: 40px;">
@@ -160,61 +160,10 @@
                                 </div>
                                 <div class="content-top">
                                     <div class="content-top__item">
-                                        <div class="content-top__left"><svg xmlns="http://www.w3.org/2000/svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32"
-                                                class="svg-25px">
-                                                <defs>
-                                                    <filter id="ada_svg__a" width="111.7%" height="111.7%" x="-5.8%"
-                                                        y="-4.2%" filterUnits="objectBoundingBox">
-                                                        <feOffset dy="0.5" in="SourceAlpha" result="shadowOffsetOuter1">
-                                                        </feOffset>
-                                                        <feGaussianBlur in="shadowOffsetOuter1"
-                                                            result="shadowBlurOuter1" stdDeviation="0.5">
-                                                        </feGaussianBlur>
-                                                        <feComposite in="shadowBlurOuter1" in2="SourceAlpha"
-                                                            operator="out" result="shadowBlurOuter1"></feComposite>
-                                                        <feColorMatrix in="shadowBlurOuter1"
-                                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.199473505 0">
-                                                        </feColorMatrix>
-                                                    </filter>
-                                                    <filter id="ada_svg__d" width="115.5%" height="117.2%" x="-7.5%"
-                                                        y="-6%" filterUnits="objectBoundingBox">
-                                                        <feOffset dy="0.5" in="SourceAlpha" result="shadowOffsetOuter1">
-                                                        </feOffset>
-                                                        <feGaussianBlur in="shadowOffsetOuter1"
-                                                            result="shadowBlurOuter1" stdDeviation="0.5">
-                                                        </feGaussianBlur>
-                                                        <feColorMatrix in="shadowBlurOuter1"
-                                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.204257246 0">
-                                                        </feColorMatrix>
-                                                    </filter>
-                                                    <linearGradient id="ada_svg__c" x1="50%" x2="50%" y1="0%" y2="100%">
-                                                        <stop offset="0%" stop-color="#FFF" stop-opacity="0.5"></stop>
-                                                        <stop offset="100%" stop-opacity="0.5"></stop>
-                                                    </linearGradient>
-                                                    <circle id="ada_svg__b" cx="15" cy="15" r="15"></circle>
-                                                    <path id="ada_svg__e"
-                                                        d="M15.725 5.06c.479-.247 1.064.324.81.795-.149.384-.71.486-.996.193-.303-.28-.204-.836.186-.989zm-5.155.546c.291-.118.66.144.63.457.03.338-.39.588-.687.427-.393-.15-.348-.778.057-.884zm10.558.893c-.455-.054-.527-.758-.09-.9.34-.162.652.143.702.46-.072.27-.302.518-.612.44zm-9.385 1.265c.487-.303 1.181.148 1.106.705-.025.561-.783.887-1.211.507-.414-.298-.351-.982.105-1.212m7.43.322c.217-.55 1.097-.568 1.344-.032.245.417-.056.934-.491 1.076-.577.106-1.124-.508-.853-1.044m-4.069 1.013c-.005-.474.433-.826.89-.859.304.06.634.187.764.488.243.416.027.987-.41 1.178-.2.11-.438.069-.656.056-.333-.16-.614-.477-.588-.863m-7.666.69c.445-.27 1.045.22.876.696-.092.411-.654.578-.975.316-.343-.246-.289-.837.1-1.013zM23.9 9.786c.377-.288 1 .043.954.511.026.427-.513.75-.887.53-.412-.183-.455-.807-.067-1.04zm-6.64.851c.622-.22 1.362.043 1.716.59.468.667.22 1.683-.507 2.066-.752.453-1.851.07-2.13-.758-.315-.74.145-1.666.92-1.898zm-3.653.073c.69-.32 1.619-.052 1.952.642.392.676.089 1.617-.612 1.966-.702.393-1.693.095-2.032-.63-.381-.702-.043-1.655.692-1.978zM9.95 11.94c.053-.437.472-.722.895-.752a.98.98 0 0 1 .87.857c-.03.45-.383.888-.867.886-.533.045-1-.477-.898-.991zm10.802-.656c.547-.313 1.306.142 1.282.76.037.655-.803 1.116-1.347.732-.566-.32-.522-1.22.065-1.492m-8.63 2.307c.638-.173 1.37.123 1.683.701.343.582.203 1.39-.33 1.818-.685.626-1.946.374-2.31-.48-.419-.783.09-1.833.956-2.04zm6.927-.003c.621-.175 1.351.06 1.685.617.442.637.231 1.588-.426 1.998-.69.477-1.756.227-2.136-.519-.46-.771.003-1.861.877-2.096m-11.04.726c.552-.205 1.164.394.94.933-.136.49-.839.672-1.202.31-.425-.34-.268-1.095.262-1.243m14.969.782a.836.836 0 0 1 .788-.874c.378.06.746.36.716.765.035.535-.62.898-1.084.647-.217-.109-.328-.328-.42-.538M5.294 14.58c.332-.143.743.14.667.503-.018.411-.635.57-.861.226-.2-.239-.08-.606.194-.73zm20.949-.009c.234-.163.61-.046.702.223.157.294-.131.696-.467.647-.472.042-.624-.665-.235-.87zm-12.317 1.973c.874-.223 1.814.494 1.82 1.38.056.895-.87 1.688-1.764 1.482-.692-.11-1.235-.766-1.212-1.453-.002-.658.502-1.27 1.156-1.409zm3.462-.001c.887-.244 1.855.486 1.841 1.392.047.878-.85 1.645-1.726 1.47-.825-.104-1.433-.995-1.203-1.783.116-.524.562-.95 1.088-1.08zm-6.676.545c.614-.103 1.19.57.941 1.144-.182.612-1.086.777-1.486.278-.468-.48-.118-1.356.545-1.422zm10.154.027c.548-.226 1.22.24 1.178.825.022.643-.808 1.087-1.343.711-.607-.337-.496-1.33.165-1.536zm2.838 2.8c-.214-.393.175-.914.62-.841.22-.004.375.167.516.311.029.233.078.511-.119.69-.267.333-.872.238-1.017-.16zm-16.268-.732c.415-.271 1.012.134.918.61-.05.423-.59.664-.945.424-.382-.217-.368-.836.027-1.034zm8.193.883c.543-.235 1.235.23 1.183.818.04.65-.815 1.1-1.346.71-.59-.335-.491-1.321.163-1.528zm-3.794.871c.462-.239 1.082.174 1.04.684.014.418-.4.774-.82.712-.347-.007-.573-.314-.685-.605.006-.317.139-.67.465-.79zm7.686.008c.476-.29 1.152.126 1.107.67.012.57-.752.934-1.195.56-.428-.293-.376-.997.088-1.23m1.337 3.25c-.212-.314.037-.693.38-.765.277.055.57.26.511.574-.04.427-.674.557-.891.192zm-10.611-.273c.084-.25.288-.497.587-.432.435.03.564.676.183.875-.342.227-.74-.084-.77-.443m5.12.287c.083-.37.568-.549.888-.353.212.09.274.322.328.52a8.822 8.822 0 0 0-.08.31c-.131.152-.3.305-.518.3-.405.047-.771-.404-.619-.777z">
-                                                    </path>
-                                                </defs>
-                                                <g fill="none">
-                                                    <g transform="translate(1)">
-                                                        <use xlink:href="#ada_svg__b" fill="#000"
-                                                            filter="url(#ada_svg__a)"></use>
-                                                        <use xlink:href="#ada_svg__b" fill="#0D1E30"></use>
-                                                        <use xlink:href="#ada_svg__b" fill="url(#ada_svg__c)"
-                                                            style="mix-blend-mode: soft-light;"></use>
-                                                        <circle cx="15" cy="15" r="14.5" stroke="#000"
-                                                            stroke-opacity="0.097"></circle>
-                                                    </g>
-                                                    <use xlink:href="#ada_svg__e" fill="#000" filter="url(#ada_svg__d)">
-                                                    </use>
-                                                    <use xlink:href="#ada_svg__e" fill="#FFF"></use>
-                                                </g>
-                                            </svg>
+                                        <div class="content-top__left">
                                             <div>
-                                                <h4 class="content-top__main-title">Cardano</h4>
-                                                <h4 class="content-top__subtitle">ADA</h4>
+                                                <h4 class="content-top__main-title">Vincom Retail</h4>
+                                                <h4 class="content-top__subtitle">VRE</h4>
                                             </div>
                                         </div>
                                         <div class="content-top__right">
@@ -226,59 +175,10 @@
                                         </div>
                                     </div>
                                     <div class="content-top__item">
-                                        <div class="content-top__left"><svg xmlns="http://www.w3.org/2000/svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32"
-                                                class="svg-25px">
-                                                <defs>
-                                                    <filter id="exp_svg__a" width="111.7%" height="111.7%" x="-5.8%"
-                                                        y="-4.2%" filterUnits="objectBoundingBox">
-                                                        <feOffset dy="0.5" in="SourceAlpha" result="shadowOffsetOuter1">
-                                                        </feOffset>
-                                                        <feGaussianBlur in="shadowOffsetOuter1"
-                                                            result="shadowBlurOuter1" stdDeviation="0.5">
-                                                        </feGaussianBlur>
-                                                        <feComposite in="shadowBlurOuter1" in2="SourceAlpha"
-                                                            operator="out" result="shadowBlurOuter1"></feComposite>
-                                                        <feColorMatrix in="shadowBlurOuter1"
-                                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.199473505 0">
-                                                        </feColorMatrix>
-                                                    </filter>
-                                                    <filter id="exp_svg__d" width="117.5%" height="115.9%" x="-8.8%"
-                                                        y="-5.7%" filterUnits="objectBoundingBox">
-                                                        <feOffset dy="0.5" in="SourceAlpha" result="shadowOffsetOuter1">
-                                                        </feOffset>
-                                                        <feGaussianBlur in="shadowOffsetOuter1"
-                                                            result="shadowBlurOuter1" stdDeviation="0.5">
-                                                        </feGaussianBlur>
-                                                        <feColorMatrix in="shadowBlurOuter1"
-                                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.204257246 0">
-                                                        </feColorMatrix>
-                                                    </filter>
-                                                    <linearGradient id="exp_svg__c" x1="50%" x2="50%" y1="0%" y2="100%">
-                                                        <stop offset="0%" stop-color="#FFF" stop-opacity="0.5"></stop>
-                                                        <stop offset="100%" stop-opacity="0.5"></stop>
-                                                    </linearGradient>
-                                                    <circle id="exp_svg__b" cx="16" cy="15" r="15"></circle>
-                                                    <path id="exp_svg__e"
-                                                        d="M26 13.717c-.004.039-.01.077-.01.116-.005 1.22-.01 2.441-.012 3.662l-.004 2.507c0 .08-.007.16-.012.26-.044-.02-.076-.033-.106-.05l-4.654-2.595c-.083-.046-.09-.087-.05-.169.793-1.628.796-3.26.015-4.892-.037-.078-.03-.117.05-.161l4.656-2.613c.039-.022.084-.033.127-.049v3.984zM16.3 4c.078.047.155.097.235.142l9.049 5.085c.034.019.066.04.113.068-.042.027-.07.047-.101.064l-4.618 2.579c-.121.067-.12.066-.2-.048-1.024-1.435-2.428-2.255-4.212-2.463a1.3 1.3 0 0 0-.16-.01c-.094 0-.13-.036-.13-.135-.001-1.013-.007-2.027-.01-3.04l-.003-2.099c0-.048.011-.095.017-.143zm-.62 22c-.034-.025-.065-.053-.1-.073l-9.117-5.125c-.043-.024-.084-.05-.143-.084.04-.027.066-.048.096-.065 1.53-.855 3.06-1.709 4.59-2.566.092-.052.135-.032.192.047.956 1.326 2.262 2.11 3.901 2.377.167.027.338.04.507.048.096.004.134.03.134.13-.001.897.003 1.794.006 2.69l.005 2.546c0 .025-.007.05-.011.075h-.06zM6 19.45c.005-.03.015-.061.016-.092l.004-1.263.007-2.827.013-4.459.005-.961c0-.028.004-.056.007-.101.044.021.076.034.106.051 1.522.85 3.043 1.7 4.567 2.548.089.049.101.087.057.18-.8 1.641-.796 3.284 0 4.927.065.132.067.131-.063.204-1.528.86-3.056 1.718-4.585 2.575-.039.022-.09.024-.134.035v-.816zm13.473-.93c.163-.573.216-1.15.18-1.736-.042-.718-.22-1.4-.594-2.026-.43-.722-1.052-1.245-1.81-1.625-.2-.101-.222-.05-.103-.3.269-.563.74-.913 1.32-1.137a4.11 4.11 0 0 1 1.258-.246.236.236 0 0 1 .16.072 4.994 4.994 0 0 1 1.338 2.739c.383 2.607-1.316 5.054-3.954 5.702-2.927.72-5.896-1.082-6.504-3.944-.568-2.679 1.148-5.27 3.708-5.954 1.923-.513 3.629-.104 5.122 1.17l.169.144-.021.032c-.147-.018-.293-.04-.44-.054-.913-.086-1.811-.026-2.682.273a4.465 4.465 0 0 0-2.508 2.085c-.08.142-.086.143-.24.09a1.31 1.31 0 0 1-.519-.337 2.747 2.747 0 0 1-.629-1.039c-.117-.34-.203-.69-.303-1.035-.008-.027-.014-.055-.038-.084-.014.08-.03.158-.042.238-.012.08-.022.16-.03.24-.095.894-.044 1.774.265 2.627.384 1.064 1.107 1.83 2.163 2.296.138.061.138.062.064.188-.391.664-1.004.998-1.761 1.112-.352.053-.704.032-1.063.006.033.013.065.028.098.04 1.73.595 3.63.328 5.061-1.186a6.93 6.93 0 0 0 .938-1.267c.068-.118.073-.119.183-.039.469.342.748.81.94 1.335.179.483.25.985.267 1.496.001.041.004.082.007.123zm6.268 2.212-9.463 5.249c-.005-.055-.012-.089-.012-.122 0-1.73 0-3.46-.002-5.19 0-.077.023-.105.106-.112 1.84-.152 3.299-.958 4.37-2.423.093-.129.092-.13.23-.053l4.643 2.575c.036.02.072.043.128.076zM15.739 4.036c.003.056.006.09.006.124 0 1.707 0 3.414.002 5.12 0 .08-.012.12-.11.127-1.878.136-3.363.949-4.451 2.443-.086.118-.084.119-.21.049l-4.521-2.51c-.053-.03-.102-.066-.153-.1.052-.036.1-.077.156-.108l9.11-5.056c.051-.028.103-.053.17-.089z">
-                                                    </path>
-                                                </defs>
-                                                <g fill="none" fill-rule="evenodd">
-                                                    <use xlink:href="#exp_svg__b" fill="#000" filter="url(#exp_svg__a)">
-                                                    </use>
-                                                    <use xlink:href="#exp_svg__b" fill="#FFAA5C"></use>
-                                                    <use xlink:href="#exp_svg__b" fill="url(#exp_svg__c)"
-                                                        style="mix-blend-mode: soft-light;"></use>
-                                                    <circle cx="16" cy="15" r="14.5" stroke="#000"
-                                                        stroke-opacity="0.097"></circle>
-                                                    <use xlink:href="#exp_svg__e" fill="#000" filter="url(#exp_svg__d)">
-                                                    </use>
-                                                    <use xlink:href="#exp_svg__e" fill="#FFF"></use>
-                                                </g>
-                                            </svg>
+                                        <div class="content-top__left">
                                             <div>
-                                                <h4 class="content-top__main-title">Trust Wallet Token</h4>
-                                                <h4 class="content-top__subtitle">TWT</h4>
+                                                <h4 class="content-top__main-title">VIETJET</h4>
+                                                <h4 class="content-top__subtitle">VJC</h4>
                                             </div>
                                         </div>
                                         <div class="content-top__right">
@@ -288,29 +188,20 @@
                                                 <h5 style="color: rgb(3, 166, 109);">+13.78%</h5>
                                             </div>
                                         </div>
+                                        
+                                        <div class="content-top__right">
+                                            <h4 class="content-top__main-title">26.38K</h4>
+                                            <div class="content-top__amount">
+                                                <h5>7d</h5>
+                                                <h5 style="color: rgb(3, 166, 109);">+13.78%</h5>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="content-top__item">
-                                        <div class="content-top__left"><svg xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 32 32" class="svg-25px">
-                                                <g fill="none" fill-rule="evenodd">
-                                                    <circle cx="16" cy="16" r="16" fill="#328332"></circle>
-                                                    <g fill="#FFF">
-                                                        <path fill-rule="nonzero"
-                                                            d="m15.989 16.553-6.721-.577 6.72-3.802v4.379zm0 4.46v6.94C13.652 24.315 11.076 20.311 9 17.07c2.45 1.38 5.008 2.823 6.989 3.944zm0-10.068L9 14.845 15.989 4z">
-                                                        </path>
-                                                        <path fill-opacity="0.601" fill-rule="nonzero"
-                                                            d="m22.71 15.976-6.721.577v-4.379l6.72 3.802zm-6.721 5.038c1.98-1.12 4.537-2.564 6.988-3.944-2.076 3.242-4.652 7.246-6.988 10.882v-6.938zm0-10.069V4l6.988 10.845z">
-                                                        </path>
-                                                        <path d="m15.989 16.553 6.72-.577-6.72 3.775z" opacity="0.2">
-                                                        </path>
-                                                        <path d="m15.988 16.553-6.721-.577 6.721 3.775z"
-                                                            opacity="0.603"></path>
-                                                    </g>
-                                                </g>
-                                            </svg>
+                                        <div class="content-top__left">
                                             <div>
-                                                <h4 class="content-top__main-title">Ethereum Classic</h4>
-                                                <h4 class="content-top__subtitle">ETC</h4>
+                                                <h4 class="content-top__main-title">VINGROUP</h4>
+                                                <h4 class="content-top__subtitle">VIC</h4>
                                             </div>
                                         </div>
                                         <div class="content-top__right">
@@ -322,36 +213,10 @@
                                         </div>
                                     </div>
                                     <div class="content-top__item">
-                                        <div class="content-top__left"><svg xmlns="http://www.w3.org/2000/svg"
-                                                xml:space="preserve" id="kava_svg__Layer_1" x="0" y="0"
-                                                viewBox="0 0 2000 2210" class="svg-25px">
-                                                <style>
-                                                    .kava_svg__kava3 {
-                                                        fill: #ff564f
-                                                    }
-                                                </style>
-                                                <path
-                                                    d="M198.5 1841.3 321.6 2210l845-1105L321.6 0 192.5 360.7l561.3 744.1z"
-                                                    style="opacity: 0.2; fill: rgb(255, 86, 79);"></path>
-                                                <path d="M1999.7 2209.8h-401l-845.2-1105L1598.7 0h401l-833.3 1104.8z"
-                                                    style="fill: rgb(240, 129, 121);"></path>
-                                                <path d="M0 0h321.4v2209.8H0z" class="kava_svg__kava3"></path>
-                                                <path id="kava_svg___x30_"
-                                                    d="M2000 2209.8h-401l-845.2-1105L1599 0h401l-833.3 1104.8z"
-                                                    class="kava_svg__kava3"></path>
-                                                <path id="kava_svg___x30__1_"
-                                                    d="M2000 2209.8h-401l-845.2-1105L1599 0h401l-833.3 1104.8z"
-                                                    class="kava_svg__kava3"></path>
-                                                <path id="kava_svg___x30__2_"
-                                                    d="M2000 2209.8h-401l-845.2-1105L1599 0h401l-833.3 1104.8z"
-                                                    class="kava_svg__kava3"></path>
-                                                <path id="kava_svg___x30__3_"
-                                                    d="M2000 2209.8h-401l-845.2-1105L1599 0h401l-833.3 1104.8z"
-                                                    class="kava_svg__kava3"></path>
-                                            </svg>
+                                        <div class="content-top__left">
                                             <div>
-                                                <h4 class="content-top__main-title">Kava</h4>
-                                                <h4 class="content-top__subtitle">KAVA</h4>
+                                                <h4 class="content-top__main-title">Techcombank</h4>
+                                                <h4 class="content-top__subtitle">TCB</h4>
                                             </div>
                                         </div>
                                         <div class="content-top__right">
@@ -363,64 +228,10 @@
                                         </div>
                                     </div>
                                     <div class="content-top__item">
-                                        <div class="content-top__left"><svg xmlns="http://www.w3.org/2000/svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32"
-                                                class="svg-25px">
-                                                <defs>
-                                                    <filter id="exmo_svg__a" width="111.7%" height="111.7%" x="-5.8%"
-                                                        y="-4.2%" filterUnits="objectBoundingBox">
-                                                        <feOffset dy="0.5" in="SourceAlpha" result="shadowOffsetOuter1">
-                                                        </feOffset>
-                                                        <feGaussianBlur in="shadowOffsetOuter1"
-                                                            result="shadowBlurOuter1" stdDeviation="0.5">
-                                                        </feGaussianBlur>
-                                                        <feComposite in="shadowBlurOuter1" in2="SourceAlpha"
-                                                            operator="out" result="shadowBlurOuter1"></feComposite>
-                                                        <feColorMatrix in="shadowBlurOuter1"
-                                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.199473505 0">
-                                                        </feColorMatrix>
-                                                    </filter>
-                                                    <filter id="exmo_svg__d" width="115.9%" height="138.9%" x="-8%"
-                                                        y="-13.9%" filterUnits="objectBoundingBox">
-                                                        <feOffset dy="0.5" in="SourceAlpha" result="shadowOffsetOuter1">
-                                                        </feOffset>
-                                                        <feGaussianBlur in="shadowOffsetOuter1"
-                                                            result="shadowBlurOuter1" stdDeviation="0.5">
-                                                        </feGaussianBlur>
-                                                        <feColorMatrix in="shadowBlurOuter1"
-                                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.204257246 0">
-                                                        </feColorMatrix>
-                                                    </filter>
-                                                    <linearGradient id="exmo_svg__c" x1="50%" x2="50%" y1="0%"
-                                                        y2="100%">
-                                                        <stop offset="0%" stop-color="#FFF" stop-opacity="0.5"></stop>
-                                                        <stop offset="100%" stop-opacity="0.5"></stop>
-                                                    </linearGradient>
-                                                    <circle id="exmo_svg__b" cx="16" cy="15" r="15"></circle>
-                                                    <path id="exmo_svg__e"
-                                                        d="m19.7 12.055-2.869 7.75-.018.047-.526-1.055-1.1.5 2.885-7.797 1.1-.5.527 1.055zm7.18.183L24.012 20l-.527-1.058-1.1.5.067-.182 2.867-7.76 1.1-.5.525 1.055-.064.183zm-6.14 6.712 1.689-4.563-1.103.5-.524-1.057-1.694 4.562.525 1.058 1.107-.5zm-9.137-4.5H6.558l.86.8-.86.813h5.04l.856-.813-.851-.8zM5.86 17.833h8.155l-.857.807.857.805H5.86L5 18.64l.86-.808zm2.501-6.768h8.15l-.854.808.855.805h-8.15l-.86-.806.86-.807z">
-                                                    </path>
-                                                </defs>
-                                                <g fill="none" fill-rule="evenodd">
-                                                    <g fill-rule="nonzero">
-                                                        <use xlink:href="#exmo_svg__b" fill="#000"
-                                                            filter="url(#exmo_svg__a)"></use>
-                                                        <use xlink:href="#exmo_svg__b" fill="#347FFB"
-                                                            fill-rule="evenodd"></use>
-                                                        <use xlink:href="#exmo_svg__b" fill="url(#exmo_svg__c)"
-                                                            fill-rule="evenodd" style="mix-blend-mode: soft-light;">
-                                                        </use>
-                                                        <circle cx="16" cy="15" r="14.5" stroke="#000"
-                                                            stroke-opacity="0.097"></circle>
-                                                    </g>
-                                                    <use xlink:href="#exmo_svg__e" fill="#000"
-                                                        filter="url(#exmo_svg__d)"></use>
-                                                    <use xlink:href="#exmo_svg__e" fill="#FFF"></use>
-                                                </g>
-                                            </svg>
+                                        <div class="content-top__left">
                                             <div>
-                                                <h4 class="content-top__main-title">Monero</h4>
-                                                <h4 class="content-top__subtitle">XMR</h4>
+                                                <h4 class="content-top__main-title">Á Châu</h4>
+                                                <h4 class="content-top__subtitle">ACB</h4>
                                             </div>
                                         </div>
                                         <div class="content-top__right">
@@ -449,18 +260,10 @@
                                 </div>
                                 <div class="content-top">
                                     <div class="content-top__item">
-                                        <div class="content-top__left"><svg xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 32 32" class="svg-25px">
-                                                <g fill="none">
-                                                    <circle cx="16" cy="16" r="16" fill="#F3BA2F"></circle>
-                                                    <path fill="#FFF"
-                                                        d="M12.116 14.404 16 10.52l3.886 3.886 2.26-2.26L16 6l-6.144 6.144zM6 16l2.26-2.26L10.52 16l-2.26 2.26zm6.116 1.596L16 21.48l3.886-3.886 2.26 2.259L16 26l-6.144-6.144-.003-.003zM21.48 16l2.26-2.26L26 16l-2.26 2.26zm-3.188-.002h.002V16L16 18.294l-2.291-2.29-.004-.004.004-.003.401-.402.195-.195L16 13.706l2.293 2.293z">
-                                                    </path>
-                                                </g>
-                                            </svg>
+                                        <div class="content-top__left">
                                             <div>
-                                                <h4 class="content-top__main-title">Binance</h4>
-                                                <h4 class="content-top__subtitle"></h4>
+                                                <h4 class="content-top__main-title">VINGROUP</h4>
+                                                <h4 class="content-top__subtitle">VIC</h4>
                                             </div>
                                         </div>
                                         <div class="content-top__right">
@@ -472,15 +275,10 @@
                                         </div>
                                     </div>
                                     <div class="content-top__item">
-                                        <div class="content-top__left"><svg xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 560 560.04" class="svg-25px">
-                                                <path fill="#de5959"
-                                                    d="m219.42 275.6-4.86-4.88a5.85 5.85 0 0 0-10 4.13v69.72a5.85 5.85 0 0 0 5.87 5.84h69.73a5.83 5.83 0 0 0 4.12-10 5.85 5.85 0 0 1 0-8.25l74.18-74.38a5.84 5.84 0 0 0 0-8.26l-6.76-6.73a5.84 5.84 0 0 1 4.13-10h69.7a5.86 5.86 0 0 1 5.86 5.84v69.72a5.86 5.86 0 0 1-10 4.13l-4.71-4.69a5.7 5.7 0 0 0-8.24 0l-125 125a5.89 5.89 0 0 1-8.27 0l-153-153a5.83 5.83 0 0 1 0-8.28L334 59.77a5.89 5.89 0 0 0 0-8.27L284.14 1.7a5.87 5.87 0 0 0-8.27 0L1.7 275.9a5.87 5.87 0 0 0 0 8.27l274.17 274.17a5.87 5.87 0 0 0 8.27 0L558.3 284.17a5.85 5.85 0 0 0 0-8.25L397 114.62a5.86 5.86 0 0 0-8.26 0l-161 161a5.83 5.83 0 0 1-8.28 0z">
-                                                </path>
-                                            </svg>
+                                        <div class="content-top__left">
                                             <div>
-                                                <h4 class="content-top__main-title">Gate.io</h4>
-                                                <h4 class="content-top__subtitle"></h4>
+                                                <h4 class="content-top__main-title">TGDĐ</h4>
+                                                <h4 class="content-top__subtitle">MWG</h4>
                                             </div>
                                         </div>
                                         <div class="content-top__right">
@@ -492,17 +290,10 @@
                                         </div>
                                     </div>
                                     <div class="content-top__item">
-                                        <div class="content-top__left"><svg xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 1024 1024" class="svg-25px">
-                                                <circle cx="512" cy="512" r="512" style="fill: rgb(0, 82, 255);">
-                                                </circle>
-                                                <path
-                                                    d="M516.3 361.83c60.28 0 108.1 37.18 126.26 92.47H764C742 336.09 644.47 256 517.27 256 372.82 256 260 365.65 260 512.49S370 768 517.27 768c124.35 0 223.82-80.09 245.84-199.28H642.55c-17.22 55.3-65 93.45-125.32 93.45-83.23 0-141.56-63.89-141.56-149.68.04-86.77 57.43-150.66 140.63-150.66z"
-                                                    style="fill: rgb(255, 255, 255);"></path>
-                                            </svg>
+                                        <div class="content-top__left">
                                             <div>
-                                                <h4 class="content-top__main-title">Coinbase Exchange</h4>
-                                                <h4 class="content-top__subtitle"></h4>
+                                                <h4 class="content-top__main-title">TMCP Quân đội</h4>
+                                                <h4 class="content-top__subtitle">MBB</h4>
                                             </div>
                                         </div>
                                         <div class="content-top__right">
@@ -514,19 +305,10 @@
                                         </div>
                                     </div>
                                     <div class="content-top__item">
-                                        <div class="content-top__left"><svg xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 146.5 146.5" class="svg-25px">
-                                                <circle cx="73.25" cy="73.25" r="73.25" fill="#ef0"></circle>
-                                                <g fill="#fff">
-                                                    <ellipse cx="92.63" cy="72.54" rx="10.21" ry="10.33"></ellipse>
-                                                    <path
-                                                        d="m120.54 87.8-.3-.47-.08-.13c-1.12-1.76-1.46-2.13-2-2.94-7.47-11.5-3.2-18.89.16-22.66.41-.46.79-1 1.14-1.42a9.86 9.86 0 0 0 1.31-1.94l.06-.1a9.46 9.46 0 0 0 1-4.37 10 10 0 0 0-19.92 0 9.81 9.81 0 0 0 1.22 4.74c.12.24.69 1 .75 1.13a3.31 3.31 0 0 0 .42.53 13 13 0 0 0 1.12 1.22A19.92 19.92 0 0 1 108 65a17.76 17.76 0 0 1-1.75 18.44L103.77 87a3.62 3.62 0 0 0-.22.32l-.06.08a9.66 9.66 0 0 0-1.49 5.33 10 10 0 0 0 19.92 0 9.72 9.72 0 0 0-1.35-4.93zM81.87 87.8l-.29-.47-.09-.13c-1.12-1.76-1.46-2.13-2-2.94-7.47-11.5-3.2-18.89.16-22.66.41-.46.79-1 1.14-1.42a9.86 9.86 0 0 0 1.31-1.94l.06-.1a9.75 9.75 0 0 0 1-4.37 10 10 0 1 0-18.7 4.74c.12.24.69 1 .75 1.13a3.31 3.31 0 0 0 .42.53 13 13 0 0 0 1.12 1.22A20 20 0 0 1 69.36 65a17.77 17.77 0 0 1-1.7 18.44 20 20 0 0 1-2 2.41l-.17.17a20 20 0 0 1-3.64 2.61C51.43 93.6 43 86.73 43 86.73l-.85-.7a6.72 6.72 0 0 1-1.59-1.77c-7.47-11.5-3.2-18.89.16-22.66.41-.46.79-1 1.14-1.42a9.86 9.86 0 0 0 1.31-1.94l.06-.1a9.61 9.61 0 0 0 1.05-4.37 10 10 0 0 0-19.92 0 9.81 9.81 0 0 0 1.22 4.74c.12.24.69 1 .75 1.13a3.31 3.31 0 0 0 .42.53 13 13 0 0 0 1.12 1.22A19.92 19.92 0 0 1 30.43 65a17.76 17.76 0 0 1-1.75 18.44l-1.27 1.8a10 10 0 0 0-3.09 7.23v.23a10 10 0 0 0 17.06 6.9c.49-.34.81-.58 1.26-.87 11.5-7.47 18.89-3.2 22.67.16.3.27.62.53.94.77a10 10 0 0 0 17-7 9.72 9.72 0 0 0-1.35-4.93z">
-                                                    </path>
-                                                </g>
-                                            </svg>
+                                        <div class="content-top__left">
                                             <div>
-                                                <h4 class="content-top__main-title">LBank</h4>
-                                                <h4 class="content-top__subtitle"></h4>
+                                                <h4 class="content-top__main-title">FPT</h4>
+                                                <h4 class="content-top__subtitle">FPT</h4>
                                             </div>
                                         </div>
                                         <div class="content-top__right">
@@ -538,30 +320,10 @@
                                         </div>
                                     </div>
                                     <div class="content-top__item">
-                                        <div class="content-top__left"><svg xmlns="http://www.w3.org/2000/svg"
-                                                xml:space="preserve" viewBox="0 0 2500 2500" class="svg-25px">
-                                                <path d="M0 0h2500v2500H0z" style="fill: none;"></path>
-                                                <path
-                                                    d="m2459.7 1566.6-540.6-937.7c-118.5-195.5-407.5-197.5-521.9 8.3l-567.6 975.2c-106 178.8 25 403.3 237.1 403.3H2204c214.1 0 374.2-230.8 255.7-449.1"
-                                                    style="fill: rgb(49, 86, 170);"></path>
-                                                <path
-                                                    d="m1680 1639.4-33.3-58.2c-31.2-54.1-99.8-170.5-99.8-170.5l-457.4-794.3C971 439.7 690.3 425.1 571.8 647.6L39.5 1568.7c-110.2 193.4 20.8 444.9 259.9 447h1900.4c-293.1 2.1-386.7-149.7-519.8-376.3"
-                                                    style="fill: rgb(25, 114, 226);"></path>
-                                                <linearGradient id="mexcLogo_svg__a" x1="703.637" x2="1935.647"
-                                                    y1="1211.657" y2="727.227"
-                                                    gradientTransform="matrix(1 0 0 -1 0 2497.89)"
-                                                    gradientUnits="userSpaceOnUse">
-                                                    <stop offset="0"
-                                                        style="stop-color: rgb(38, 76, 162); stop-opacity: 0;"></stop>
-                                                    <stop offset="1" style="stop-color: rgb(35, 69, 136);"></stop>
-                                                </linearGradient>
-                                                <path
-                                                    d="m1680.1 1639.4-33.3-58.2c-31.2-54.1-99.8-170.5-99.8-170.5l-295.3-519.8-424.2 723.6c-106 178.8 25 403.4 237 403.4h1135.3c-295.2-2.2-386.7-151.9-519.7-378.5"
-                                                    style="fill: url(&quot;#mexcLogo_svg__a&quot;);"></path>
-                                            </svg>
+                                        <div class="content-top__left">
                                             <div>
-                                                <h4 class="content-top__main-title">MEXC Global</h4>
-                                                <h4 class="content-top__subtitle"></h4>
+                                                <h4 class="content-top__main-title">SSI</h4>
+                                                <h4 class="content-top__subtitle">SSI</h4>
                                             </div>
                                         </div>
                                         <div class="content-top__right">
@@ -590,18 +352,10 @@
                                 </div>
                                 <div class="content-top">
                                     <div class="content-top__item">
-                                        <div class="content-top__left"><svg xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 32 32" class="svg-25px">
-                                                <g fill="none">
-                                                    <circle cx="16" cy="16" r="16" fill="#F3BA2F"></circle>
-                                                    <path fill="#FFF"
-                                                        d="M12.116 14.404 16 10.52l3.886 3.886 2.26-2.26L16 6l-6.144 6.144zM6 16l2.26-2.26L10.52 16l-2.26 2.26zm6.116 1.596L16 21.48l3.886-3.886 2.26 2.259L16 26l-6.144-6.144-.003-.003zM21.48 16l2.26-2.26L26 16l-2.26 2.26zm-3.188-.002h.002V16L16 18.294l-2.291-2.29-.004-.004.004-.003.401-.402.195-.195L16 13.706l2.293 2.293z">
-                                                    </path>
-                                                </g>
-                                            </svg>
+                                        <div class="content-top__left">
                                             <div>
-                                                <h4 class="content-top__main-title">ADAUP</h4>
-                                                <h4 class="content-top__subtitle">ADAUP</h4>
+                                                <h4 class="content-top__main-title">Vinhomes</h4>
+                                                <h4 class="content-top__subtitle">VHM</h4>
                                             </div>
                                         </div>
                                         <div class="content-top__right">
@@ -613,30 +367,10 @@
                                         </div>
                                     </div>
                                     <div class="content-top__item">
-                                        <div class="content-top__left"><svg xmlns="http://www.w3.org/2000/svg"
-                                                xml:space="preserve" viewBox="0 0 400 400" class="svg-25px">
-                                                <linearGradient id="inj_svg__a" x1="0" x2="400" y1="182.253"
-                                                    y2="182.253" gradientTransform="matrix(1 0 0 -1 0 399.89)"
-                                                    gradientUnits="userSpaceOnUse">
-                                                    <stop offset="0" style="stop-color: rgb(0, 130, 250);"></stop>
-                                                    <stop offset="1" style="stop-color: rgb(0, 242, 254);"></stop>
-                                                </linearGradient>
-                                                <path
-                                                    d="M48.5 69.1C51 66 53.6 63 56.2 60c.1-.1.4-.2.5-.3.2-.3.6-.5.9-.8l.2-.3c1.8-1.7 3.8-3.5 6-5.2 8-6 16.2-10.6 24.9-13.7 28-9.8 59.1-3.8 83.5 19.3 34.1 31.9 31 83.4 3.8 117.6-34.4 51-93.4 122.1-11.7 185.8 14.7 11.5 25.6 20.9 71.9 34.3-30.3 5.6-58.4 3.8-89.6-4.1-22.1-12.5-56.9-39.2-68.7-75.3-17.9-54.7 31.5-136.6 55.3-168.1 32.7-43.6-20.2-90.8-59.3-38.1C53.7 138.6 18 216.3 30.4 274c7.2 32.7 16.9 56.5 55.2 89.3-7.1-4.2-14-8.9-20.7-14.3C-24 266.1-13.7 137.9 48.5 69.1z"
-                                                    style="fill: url(&quot;#inj_svg__a&quot;);"></path>
-                                                <linearGradient id="inj_svg__b" x1="0" x2="400" y1="217.527"
-                                                    y2="217.527" gradientTransform="matrix(1 0 0 -1 0 399.89)"
-                                                    gradientUnits="userSpaceOnUse">
-                                                    <stop offset="0" style="stop-color: rgb(0, 130, 250);"></stop>
-                                                    <stop offset="1" style="stop-color: rgb(0, 242, 254);"></stop>
-                                                </linearGradient>
-                                                <path
-                                                    d="M351.5 330.9c-2.5 3.1-5.1 6.1-7.7 9.1-.1.1-.4.2-.5.3-.2.3-.6.5-.9.8l-.2.3c-1.8 1.7-3.8 3.5-6 5.1-8 6-16.2 10.6-24.9 13.7-28 9.8-59.1 3.8-83.5-19.3-34.1-31.9-31-83.4-3.8-117.6 34.4-51 93.4-122.1 11.7-185.8C221 26 210.1 16.6 163.8 3.2c30.3-5.6 58.4-3.8 89.6 4.1 22.1 12.5 56.9 39.2 68.7 75.3 17.9 54.7-31.5 136.6-55.3 168.1-32.7 43.6 20.2 90.8 59.3 38.1 20.4-27.5 56.1-105.2 43.7-162.9-7.2-32.7-16.9-56.5-55.2-89.3 7.1 4.2 14 8.9 20.7 14.3 88.7 83 78.4 211.2 16.2 280"
-                                                    style="fill: url(&quot;#inj_svg__b&quot;);"></path>
-                                            </svg>
+                                        <div class="content-top__left">
                                             <div>
-                                                <h4 class="content-top__main-title">Injective</h4>
-                                                <h4 class="content-top__subtitle">INJ</h4>
+                                                <h4 class="content-top__main-title">SSI</h4>
+                                                <h4 class="content-top__subtitle">SSI</h4>
                                             </div>
                                         </div>
                                         <div class="content-top__right">
@@ -648,23 +382,10 @@
                                         </div>
                                     </div>
                                     <div class="content-top__item">
-                                        <div class="content-top__left"><svg xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 32 32" class="svg-25px">
-                                                <g fill="none">
-                                                    <circle cx="16" cy="16" r="16" fill="#516AFF"></circle>
-                                                    <g fill="#FFF">
-                                                        <path
-                                                            d="m18.286 12.479 2.2 1.257V7.45l-4.4-2.2L9.25 9.1v13.671l6.836 3.929 6.757-4.007v-6.757l-6.522-3.929-2.2 1.1 6.522 3.85.078 4.636-4.635 2.593-4.715-2.672V10.2l4.715-2.593 2.2 1.179v3.693z">
-                                                        </path>
-                                                        <path
-                                                            d="m15.85 16.25 1.493-.786 1.65 1.022-4.872 2.75v-5.657L15.85 14.6">
-                                                        </path>
-                                                    </g>
-                                                </g>
-                                            </svg>
+                                        <div class="content-top__left">
                                             <div>
-                                                <h4 class="content-top__main-title">Band Protocol</h4>
-                                                <h4 class="content-top__subtitle">BAND</h4>
+                                                <h4 class="content-top__main-title">Masan</h4>
+                                                <h4 class="content-top__subtitle">MSN</h4>
                                             </div>
                                         </div>
                                         <div class="content-top__right">
@@ -676,40 +397,10 @@
                                         </div>
                                     </div>
                                     <div class="content-top__item">
-                                        <div class="content-top__left"><svg xmlns="http://www.w3.org/2000/svg"
-                                                xml:space="preserve" viewBox="0 0 3500 3500" class="svg-25px">
-                                                <path
-                                                    d="M1750 0c966.5 0 1750 783.5 1750 1750s-783.5 1750-1750 1750S0 2716.5 0 1750 783.5 0 1750 0"
-                                                    style="fill: rgb(0, 70, 122);"></path>
-                                                <linearGradient id="coti_svg__a" x1="1480.345" x2="1252.889"
-                                                    y1="249.463" y2="1538.512"
-                                                    gradientTransform="matrix(1 0 0 -1 0 2554)"
-                                                    gradientUnits="userSpaceOnUse">
-                                                    <stop offset="0.1" style="stop-color: rgb(25, 74, 173);"></stop>
-                                                    <stop offset="0.5" style="stop-color: rgb(36, 143, 203);"></stop>
-                                                    <stop offset="0.8" style="stop-color: rgb(43, 191, 223);"></stop>
-                                                </linearGradient>
-                                                <path
-                                                    d="M762.6 1521.6c-35.1 0-50.7 15.6-50.7 46.8v803.7c0 35.1 15.6 46.8 50.7 46.8 386.3 3.9 858.3-339.4 1248.5-608.6V881.7c-386.2 265.3-870 643.8-1248.5 639.9z"
-                                                    style="fill: url(&quot;#coti_svg__a&quot;);"></path>
-                                                <linearGradient id="coti_svg__b" x1="3511.147" x2="3811.925"
-                                                    y1="-1272.658" y2="432.942"
-                                                    gradientTransform="matrix(-1 0 0 1 5851.79 2174.83)"
-                                                    gradientUnits="userSpaceOnUse">
-                                                    <stop offset="0.1" style="stop-color: rgb(25, 74, 173);"></stop>
-                                                    <stop offset="0.5" style="stop-color: rgb(36, 143, 203);"></stop>
-                                                    <stop offset="0.8" style="stop-color: rgb(43, 191, 223);"></stop>
-                                                </linearGradient>
-                                                <path
-                                                    d="M2795.3 1884.4c35.1 0 50.7-15.6 50.7-46.8v-803.7c0-35.1-15.6-46.8-50.7-46.8-390.2-3.9-858.3 339.4-1248.5 608.6v924.7c386.3-265.3 870.1-643.8 1248.5-636"
-                                                    style="fill: url(&quot;#coti_svg__b&quot;);"></path>
-                                                <path
-                                                    d="M2011.1 1810.3v-530.6c-160 101.4-319.9 210.7-468.2 312.1v530.6c163.9-101.4 320-210.7 468.2-312.1"
-                                                    style="fill: rgb(25, 74, 173);"></path>
-                                            </svg>
+                                        <div class="content-top__left">
                                             <div>
-                                                <h4 class="content-top__main-title">COTI</h4>
-                                                <h4 class="content-top__subtitle">COTI</h4>
+                                                <h4 class="content-top__main-title">Bảo Việt</h4>
+                                                <h4 class="content-top__subtitle">BVH</h4>
                                             </div>
                                         </div>
                                         <div class="content-top__right">
@@ -721,18 +412,10 @@
                                         </div>
                                     </div>
                                     <div class="content-top__item">
-                                        <div class="content-top__left"><svg xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 32 32" class="svg-25px">
-                                                <g fill="none" fill-rule="evenodd">
-                                                    <circle cx="16" cy="16" r="16" fill="#136AAD"></circle>
-                                                    <path fill="#FFF"
-                                                        d="m7 11.09 2.667 1.13v6.353L16 14.786l6.394 3.787V12.22L25 11.09v11.974l-9-5.315-9 5.315zm.303-.489L16 5.5l8.758 5.101-2.364.978L16 7.883l-6.333 3.696zm1.879 11.821 1.97-1.13 4.878 2.825 4.818-2.825 2.03 1.13L16.03 26.5l-6.848-4.078z">
-                                                    </path>
-                                                </g>
-                                            </svg>
+                                        <div class="content-top__left">
                                             <div>
-                                                <h4 class="content-top__main-title">Conflux</h4>
-                                                <h4 class="content-top__subtitle">WAN</h4>
+                                                <h4 class="content-top__main-title">VINGROUP</h4>
+                                                <h4 class="content-top__subtitle">VIC</h4>
                                             </div>
                                         </div>
                                         <div class="content-top__right">
@@ -761,25 +444,10 @@
                                 </div>
                                 <div class="content-top">
                                     <div class="content-top__item">
-                                        <div class="content-top__left"><svg xmlns="http://www.w3.org/2000/svg"
-                                                xml:space="preserve" viewBox="0 0 1000 1000" class="svg-25px">
-                                                <path
-                                                    d="M500 0c276.1 0 500 223.9 500 500s-223.9 500-500 500S0 776.1 0 500 223.9 0 500 0"
-                                                    style="fill-rule: evenodd; clip-rule: evenodd; fill: rgb(38, 49, 69);">
-                                                </path>
-                                                <path d="M530.7 177h-69.9L172 680h514.8L650 620H276z"
-                                                    style="fill-rule: evenodd; clip-rule: evenodd; fill: rgb(204, 217, 226);">
-                                                </path>
-                                                <path d="m785.3 739 35.7-60.5L529.7 177 275 620h70l185.7-323.5z"
-                                                    style="fill-rule: evenodd; clip-rule: evenodd; fill: rgb(170, 170, 170);">
-                                                </path>
-                                                <path d="m172 680 35.7 59h577.6L530.7 295.1l-35.2 62L684.4 680z"
-                                                    style="fill-rule: evenodd; clip-rule: evenodd; fill: rgb(90, 89, 103);">
-                                                </path>
-                                            </svg>
+                                        <div class="content-top__left">
                                             <div>
-                                                <h4 class="content-top__main-title">ARPA Chain</h4>
-                                                <h4 class="content-top__subtitle">ARPA</h4>
+                                                <h4 class="content-top__main-title">Xăng dầu VN</h4>
+                                                <h4 class="content-top__subtitle">PLX</h4>
                                             </div>
                                         </div>
                                         <div class="content-top__right">
@@ -791,21 +459,10 @@
                                         </div>
                                     </div>
                                     <div class="content-top__item">
-                                        <div class="content-top__left"><svg xmlns="http://www.w3.org/2000/svg"
-                                                xml:space="preserve" id="klay_svg__Layer_1" x="0" y="0"
-                                                viewBox="0 0 2000 1975.1" class="svg-25px">
-                                                <style>
-                                                    .klay_svg__st0 {
-                                                        fill: #4f473b
-                                                    }
-                                                </style>
-                                                <path
-                                                    d="m1047.4 982.5 683.3 678.3c359.1-380.9 359.1-975.7 0-1356.6M997.5 1027.4l-673.3 668.3L997.5 1975l673.3-279.3M972.6 957.6l698.3-693.3L1027.4 0 389 1541.2zM0 982.5c-.5 252.3 95.9 495.1 269.3 678.3l668.3-1611"
-                                                    class="klay_svg__st0"></path>
-                                            </svg>
+                                        <div class="content-top__left"> 
                                             <div>
-                                                <h4 class="content-top__main-title">Klaytn</h4>
-                                                <h4 class="content-top__subtitle">KLAY</h4>
+                                                <h4 class="content-top__main-title">Khí VN</h4>
+                                                <h4 class="content-top__subtitle">GAS</h4>
                                             </div>
                                         </div>
                                         <div class="content-top__right">
@@ -817,18 +474,10 @@
                                         </div>
                                     </div>
                                     <div class="content-top__item">
-                                        <div class="content-top__left"><svg xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 32 32" class="svg-25px">
-                                                <g fill="none" fill-rule="evenodd">
-                                                    <circle cx="16" cy="16" r="16" fill="#DE3F6B"></circle>
-                                                    <path fill="#FFF" fill-rule="nonzero"
-                                                        d="M9.752 11h.904c1.413.134 2.72.821 3.687 1.81 2.009 2.039 3.113 4.916 5.67 6.433 1.848 1.097 4.433.2 5.341-1.654.462-.008.927-.008 1.389-.006-.636 1.883-2.489 3.236-4.515 3.417h-.746c-1.247-.1-2.46-.564-3.403-1.366-1.37-1.123-2.25-2.664-3.315-4.036-.916-1.213-1.85-2.577-3.366-3.128-1.873-.679-4.16.383-4.843 2.187-.6 1.486-.112 3.328 1.23 4.28 1.006.752 2.407 1.033 3.615.595 1.342-.468 2.338-1.532 3.102-2.66.301.417.594.84.884 1.266-1.188 1.447-2.836 2.69-4.796 2.862h-.803C7.317 20.834 5.17 18.804 5 16.406v-.785c.16-2.393 2.28-4.447 4.752-4.621zm11.68 0h.75c2.493.157 4.613 2.228 4.818 4.626v1.23c-2.057.018-4.116.006-6.173.008.002-.36.002-.717 0-1.077 1.626-.004 3.25.007 4.873-.004-.115-.636-.264-1.287-.654-1.826-.95-1.404-2.959-1.978-4.565-1.37-1.28.46-2.244 1.466-2.987 2.54-.286-.397-.57-.8-.845-1.206 1.173-1.468 2.81-2.738 4.783-2.921">
-                                                    </path>
-                                                </g>
-                                            </svg>
+                                        <div class="content-top__left">
                                             <div>
-                                                <h4 class="content-top__main-title">Ethernity Chain</h4>
-                                                <h4 class="content-top__subtitle">ERN</h4>
+                                                <h4 class="content-top__main-title">TMCP DNA</h4>
+                                                <h4 class="content-top__subtitle">SSB</h4>
                                             </div>
                                         </div>
                                         <div class="content-top__right">
@@ -840,315 +489,10 @@
                                         </div>
                                     </div>
                                     <div class="content-top__item">
-                                        <div class="content-top__left"><svg xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 156.814 211.713" class="svg-25px">
-                                                <circle cx="78.408" cy="133.306" r="78.407" fill="#33348e"></circle>
-                                                <path fill="none" stroke="#fff" stroke-width="0.724"
-                                                    d="M72.646 205.679C25.741 151.516 46.314 63.732 78.408 55.233m5.759 150.446c46.906-54.164 26.333-141.947-5.759-150.446">
-                                                </path>
-                                                <path fill="none" stroke="#fff" stroke-width="0.724"
-                                                    d="M85.098 206.864c33.265-5.958 63.093-36.959 63.093-77.555 0-43.302-26.482-74.411-69.783-74.411-39.843 0-75.337 31.109-75.337 74.411 0 40.795 33.588 71.691 68.826 77.604">
-                                                </path>
-                                                <ellipse cx="78.422" cy="207.151" fill="none" stroke="#fff"
-                                                    stroke-width="0.724" rx="6.75" ry="3.213"></ellipse>
-                                                <path fill="#fff"
-                                                    d="M40.919 189.967 21.73 168.784l14.426-13.004 4.096 4.505-8.555 7.732 3.194 3.516 5.55-5.129 4.096 4.506-5.55 5.129 7.804 8.655-5.872 5.273zm42.093.366c-.746 1.713-2.414 2.701-4.604 2.701-3.454 0-5.543-2.039-5.543-5.311 0-3.255 2.293-5.282 5.208-5.282 2.26 0 3.814.763 4.627 2.127l6.841-5.368c-2.108-3.538-6.14-5.519-12-5.519-7.564 0-13.51 5.257-13.51 13.704 0 8.484 5.419 13.775 14.375 13.775 5.684 0 10.013-2.567 11.946-7.007l-7.34-3.82zm38.683-24.938.949.353c1.667.875 4.047 2.491 2.92 4.642-1.043 1.991-2.746 1.998-4.581 1.038l-1.982-.896 2.694-5.137-4.453-9.285-14.105 26.853 7.282 3.889 5.754-10.926 1.516.679c6.897 3.615 11.029 1.842 13.639-3.134 2.492-4.751 1.341-9.315-5.558-12.933l-8.528-4.429m22.632-54.066c3.644.941 7.522 2.821 10.108 5.172l.469 2.232c-1.644-1.528-6.463-4.115-9.871-4.936l-.706-2.468zm1.527 6.583c3.644.938 7.523 2.82 10.108 5.169l.47 2.234c-1.645-1.527-6.465-4.113-9.873-4.938l-.705-2.465zm.705 6.581c3.644.94 7.521 2.82 10.107 5.171l.117 2.115c-1.644-1.528-6.464-4.113-9.872-4.937l-.352-2.349zm.353 6.58c3.645.941 7.523 2.82 10.108 5.172l-.119 2.116c-1.645-1.529-6.463-4.114-9.872-4.936l-.117-2.352z">
-                                                </path>
-                                                <path fill="#65493c"
-                                                    d="M102.031 57.384c-10.314-7.45-36.854-5.637-47.717.234"></path>
-                                                <path fill="#cc1e4c" stroke="#000" stroke-width="0.724"
-                                                    d="M48.554 35.17c-3.172.234-7.52-.438-9.754-1.529-2.234-1.09-4.466.237-6.699 1.881.471-1.881 2-3.174 4.583-4.113-1.527-.354-4.818-1.646-6.111-3.644 3.527 1.058 7.051 1.058 9.754.47 2.704-.587 7.759-.705 10.108 2.233m53.71-3.173c2.585-.234 4.583-.234 6.581 2.351 1.999 2.585 7.053 2.468 8.227-.939.118 1.763-.704 4.112-.704 4.112 1.88-.822 3.173-1.881 3.877-2.702-.353 3.172-4.114 12.339-16.57 6.228M66.537 10.254c-1.646-1.058-4.466-2.232-5.994-.94-1.527 1.293-3.526 1.997-4.701.586.705 1.177 2.937 2.118 4.583.825 1.645-1.293 3.407-1.058 4.348 0">
-                                                </path>
-                                                <path fill="#cf8c2c" stroke="#000" stroke-width="0.724"
-                                                    d="M74.528 17.07c-.117-1.998-2.409-7.144-3.643-5.17-.587.94-2.114 1.057-2.82.47-.705-.588-2.703-1.059-3.526-.47-.823.587-2.351 0-2.351-.94 0-.941.824-1.292 1.998-1.06 1.177.237 4.114.237 4.818-.351.706-.588-.116-1.881-1.762-1.999-1.645-.116-5.759-.234-6.816 1.058-.942-1.058-1.293-4.348 1.057-3.996 2.35.353 2.703-.587 3.174-1.293.469-.704 1.998-1.527 3.643-1.646 1.646-.117 2.821-.468 4.584 0 1.762.47 2.35 0 2.585-.823.94 1.411.94 2.703.705 3.174 1.645-.471 4.231.117 4.702 1.176.47 1.057 1.175.94 2.115.94.942 0 1.645.235 1.998 1.645.353 1.41 1.175.472 1.881.823.704.353 2.703 1.175 3.056 2.351.352 1.175 1.292 1.527 2.937 2.585">
-                                                </path>
-                                                <path fill="#cc1e4c" stroke="#000" stroke-width="0.724"
-                                                    d="M49.259 26.12c-.117-1.88-2.115-3.995-3.525-5.288-1.41-1.293-1.292-3.174.823-4.701 2.115-1.527 10.341-4.936 16.571-3.057 6.229 1.882 19.275 3.174 30.087-1.056l11.283 12.222">
-                                                </path>
-                                                <path fill="#7b002b" stroke="#000" stroke-width="0.724"
-                                                    d="M96.858 22.594c5.76 2 9.051.706 9.168-.587.117-1.293-3.555-.97-4.966-.852-1.057.087-2.827.026-3.097-.357">
-                                                </path>
-                                                <path fill="#cc1e4c" stroke="#000" stroke-width="0.724"
-                                                    d="M97.963 20.798c.271.383 2.04.444 3.097.357 1.411-.118 5.083-.441 4.966.852.235-.646-.059-1.762-.412-2.468h-7.522">
-                                                </path>
-                                                <path fill="#7b002b" stroke="#000" stroke-width="0.724"
-                                                    d="M107.555 18.716c.94 1.059 0 2.939-2.469 2.234-2.468-.705-5.524-1.469-6.817-.647-.323.205-.398.368-.306.496-.325-.351-.252-1.701-.694-2.464l8.287-1.058">
-                                                </path>
-                                                <path fill="#cc1e4c" stroke="#000" stroke-width="0.724"
-                                                    d="M96.675 17.895c-.014.619.726 1.07 2.77.586 4.466-1.057 7.168-.823 8.11.235-.177-.646-.766-1.822-1-2.585H95.977">
-                                                </path>
-                                                <path fill="#7b002b" stroke="#000" stroke-width="0.724"
-                                                    d="M93.687 16.602c-.118-1.059 1.76-3.291 3.995-2.586 2.233.706 5.29.588 6.935-.353 1.645-.94 4.112-.94 5.288-.117.94.94 0 3.172-1.646 3.643-1.646.47-7.052-.821-9.285-.94-1.211-.064-2.283.91-2.299 1.646-.522-1.118-.933-1.411-1.345-1.764-.469.236-1.233.881-1.643.471z">
-                                                </path>
-                                                <path fill="#cc1e4c" stroke="#000" stroke-width="0.724"
-                                                    d="M109.904 13.545c-.94-.941-1.176-2.115-1.881-3.645-.705-1.526-1.762-2.584-4.112-.821-2.351 1.764-7.405.821-9.403.354-1.998-.471-3.408 0-3.644 1.293-.234 1.292 1.411 4.583 2.822 5.876-.118-1.059 1.76-3.291 3.995-2.586 2.233.706 5.29.588 6.935-.353 1.645-.94 4.113-.94 5.288-.118z">
-                                                </path>
-                                                <path fill="#cf8c2c" stroke="#000" stroke-width="0.724"
-                                                    d="m105.556 46.217 3.056-4.112c5.759-5.171-.94-9.757-3.408-11.049 5.055-6.581-.353-8.579-1.88-8.226-.588-1.292-2.352-1.88-3.645-1.998-1.292-.118-2.35.233-3.407-.823-1.058-1.057-4.232-1.175-6.935.354-2.702 1.527-7.169 1.879-9.754.117-2.586-1.764-8.581-.941-10.812 1.175-2.234 2.114-4.232 3.878-8.228-.471-5.455-5.935-12.34 1.41-11.752 5.876.587 4.466-1.529 8.11-4.349 8.698l5.642 9.166">
-                                                </path>
-                                                <path fill="#f0c560" stroke="#000" stroke-width="0.724"
-                                                    d="M78.408 36.234c1.135 3.001 7.836 3.729 9.768.978.796 3 6.017 3.972 7.948 1.595.568 3.002 5.793 4.253 7.156 3.002 1.023 2.877 4.542 3.251 6.475 1.251l1.93-2.252c1.591.126 1.818-1.125 2.613-2.124.795-1.002 1.478-1.501 3.408-1.751-.568-.626-.908-1.626-2.043-1.376l-4.318-2.501-2.613 5.252 1.363.875c-3.407 5.003-6.134 2.126-5.679-1.501l-1.25-.251c-1.478 3.753-5.225 2.877-5.225-1.25l-1.705-.624c-2.044 3.751-7.266 2.407-7.153-2.143l-1.703-.125c-.228 4.298-7.952 4.196-8.974-1.057-1.023 5.253-8.748 5.003-8.975.704l-1.704.125c.114 4.549-5.225 5.425-7.268 1.672l-1.706.626c0 4.126-3.749 5.002-5.226 1.25l-1.25.25c.456 3.627-2.271 6.503-5.678 1.5l1.362-.875-2.613-5.253-4.315 2.501c-1.137-.25-1.478.751-2.045 1.377 1.931.25 2.612.75 3.408 1.75.794 1.001 1.022 2.251 2.612 2.126l1.931 2.25c1.932 2.001 5.454 1.626 6.476-1.25 1.364 1.25 6.589 0 7.157-3.001 1.931 2.376 7.27 1.876 8.064-1.126 1.932 2.752 8.635 2.377 9.772-.624z">
-                                                </path>
-                                                <path fill="#f0c560" stroke="#000" stroke-width="0.724"
-                                                    d="M73.824 26.12h9.167v7.992h-9.167zm28.047 11.006.046-7.726-8.863-2.344-.045 7.726zm-46.928 0 .071-7.726 8.863-2.344-.072 7.726z">
-                                                </path>
-                                                <circle cx="52.199" cy="35.522" r="2.161" fill="#f0c560" stroke="#000"
-                                                    stroke-width="0.724"></circle>
-                                                <circle cx="68.416" cy="31.174" r="2.161" fill="#f0c560" stroke="#000"
-                                                    stroke-width="0.724"></circle>
-                                                <circle cx="104.616" cy="35.522" r="2.161" fill="#f0c560" stroke="#000"
-                                                    stroke-width="0.724"></circle>
-                                                <circle cx="88.396" cy="31.174" r="2.161" fill="#f0c560" stroke="#000"
-                                                    stroke-width="0.724"></circle>
-                                                <path fill="#f0c560" stroke="#000" stroke-width="0.724"
-                                                    d="M102.031 57.384c-10.314-7.45-36.854-5.637-47.717.234-1.764.234-3.174-2.585-1.645-3.997l-2.468-6.464c-1.059-.116-1.764-1.41-1.059-2.467.705-1.058 9.52-5.877 29.266-5.877 19.744 0 27.384 6.346 28.323 7.287.941.941.471 2.586-.705 2.586l-2.82 4.7c.939 1.41 0 3.761-1.175 3.998z">
-                                                </path>
-                                                <path fill="#f0c560" stroke="#000" stroke-width="0.724"
-                                                    d="M106.026 48.686c1.176 0 1.646-1.645.705-2.586-.939-.941-8.579-7.287-28.323-7.287-19.746 0-28.561 4.819-29.266 5.877-.705 1.057 0 2.351 1.059 2.467 3.995-1.88 15.867-5.17 28.677-5.17 10.106 0 21.976 2.821 27.148 6.699zm-3.995 8.698c-10.314-7.45-36.854-5.637-47.717.234-1.764.234-3.174-2.585-1.645-3.997 3.408-1.879 16.806-4.936 25.739-4.936 8.931 0 20.919 2.585 24.798 4.7.939 1.411 0 3.762-1.175 3.999z">
-                                                </path>
-                                                <circle cx="78.408" cy="45.394" r="2.742" fill="#cc1e4c" stroke="#000"
-                                                    stroke-width="0.724"></circle>
-                                                <circle cx="63.128" cy="46.804" r="2.742" fill="#cc1e4c" stroke="#000"
-                                                    stroke-width="0.724"></circle>
-                                                <circle cx="53.844" cy="49.391" r="2.743" fill="#cc1e4c" stroke="#000"
-                                                    stroke-width="0.724"></circle>
-                                                <circle cx="92.746" cy="46.804" r="2.742" fill="#cc1e4c" stroke="#000"
-                                                    stroke-width="0.724"></circle>
-                                                <circle cx="102.031" cy="49.391" r="2.743" fill="#cc1e4c" stroke="#000"
-                                                    stroke-width="0.724"></circle>
-                                                <circle cx="58.356" cy="47.914" r="1.191" fill="#cc1e4c" stroke="#000"
-                                                    stroke-width="0.724"></circle>
-                                                <circle cx="69.287" cy="45.563" r="1.192" fill="#cc1e4c" stroke="#000"
-                                                    stroke-width="0.724"></circle>
-                                                <circle cx="97.401" cy="47.914" r="1.191" fill="#cc1e4c" stroke="#000"
-                                                    stroke-width="0.724"></circle>
-                                                <path fill="#cc1e4c" stroke="#000" stroke-width="0.724"
-                                                    d="M86.471 46.755a1.191 1.191 0 1 1-.002-2.382 1.191 1.191 0 0 1 .002 2.382z">
-                                                </path>
-                                                <path fill="#fff" stroke="#000" stroke-width="0.724"
-                                                    d="M78.408 137.536c.821-2.115 3.996-2.938 6.699-2.938h20.568c1.997 0 3.407-2.232 3.407-3.877V57.618h-61.35v73.102c0 1.645 1.41 3.877 3.408 3.877h20.567c2.704.001 5.877.824 6.701 2.939z">
-                                                </path>
-                                                <path fill="#cc1e4c" stroke="#000" stroke-width="0.724"
-                                                    d="M48.908 58.794h28.558v36.433H48.908z"></path>
-                                                <path fill="#fff" stroke="#000" stroke-width="0.724"
-                                                    d="M79.346 58.794h28.56v36.433h-28.56zm-1.88 74.511V96.872H48.908v33.73c0 1.176 1.057 2.703 2.468 2.703h26.09z">
-                                                </path>
-                                                <path fill="#cc1e4c" stroke="#000" stroke-width="0.724"
-                                                    d="M107.906 130.249V96.872h-28.56v36.433h25.975c1.175 0 2.585-1.645 2.585-3.056z">
-                                                </path>
-                                                <path
-                                                    d="M78.408 170.014c-6.059 0-10.971-4.911-10.971-10.969 0-6.059 4.912-10.97 10.971-10.97 6.058 0 10.969 4.911 10.969 10.97 0 6.058-4.912 10.969-10.969 10.969v.998c6.608 0 11.967-5.359 11.967-11.967 0-6.609-5.359-11.968-11.967-11.968-6.61 0-11.967 5.359-11.967 11.968 0 6.608 5.357 11.967 11.967 11.967">
-                                                </path>
-                                                <path fill="#fff" stroke="#000" stroke-width="0.724"
-                                                    d="m77.115 164.215.822 5.288h1.058l.705-5.288m-6.418-3.705-4.169 3.358.53.914 4.932-2.032m0-7.412-4.992-1.931-.529.917 4.228 3.254m6.418-3.705-.825-5.289h-1.056l-.704 5.289m6.417 3.704 4.168-3.358-.528-.914-4.933 2.033m0 7.411 4.992 1.932.528-.917-4.227-3.255">
-                                                </path>
-                                                <circle cx="78.408" cy="159.043" r="5.678" fill="#fff" stroke="#000"
-                                                    stroke-width="0.724"></circle>
-                                                <circle cx="78.408" cy="159.044" r="3.045" fill="#fff" stroke="#000"
-                                                    stroke-width="0.724"></circle>
-                                                <path fill="#259271"
-                                                    d="M116.486 124.961c-1.058.94-1.411 2.35-1.645 3.174-.353-.706-1.53.235-1.53 1.88-.351-.352-1.292 1.88-1.056 3.291-.705 0-.709 2.8-.587 3.996-.588.235-.588 1.292-.471 2.585l1.058 1.411c1.88-.94 4.23-3.29 3.172-3.172.588-1.881 1.177-3.644.588-3.174.94-2.35 1.292-4.114.704-3.761.94-1.293 1.999-2.702 1.292-2.468 1.177-1.176 2.469-2.586 1.646-2.469.941-.704 1.293-1.292 1.293-1.646">
-                                                </path>
-                                                <path fill="#259271"
-                                                    d="M121.54 124.607c-.234 1.293.116 2.352.47 3.41-.704-.237-.821.118-.47 1.41-.705.235-.352 2.233.353 3.525-.47.353-.587 1.529-.119 2.587-.705 0-1.174 2.819-1.058 3.642-.704-.235-1.41.939-2.115 1.997-.353-.586-1.41-.351-2.116.588-.47-.234-3.878.941-4.818 1.765l.351 3.29c1.411.471 4.82.234 3.998-.705 1.644.117 3.642-.94 2.937-1.176 2.116-.352 3.762-1.762 2.939-1.88 1.644-.939 2.703-2.82 1.88-2.82 1.057-.471 3.057-3.76 1.879-3.644 1.06-1.41 1.178-4.583.236-3.644.354-1.644.354-4.23-.469-3.525.233-1.881.585-3.174-.236-2.703.117-.824.236-1.764 0-2.234m-46.774 16.689c2.115-1.058 2.819-.705 2.703.118 1.762-.234 4.23.236 3.409 1.059 1.527-.589 3.877-.235 3.172.823 1.528-.47 3.291-1.529 3.291-.706 1.763-.94 4.231-1.058 3.525 0 1.293-.352 2.703-.94 3.878-.587l.117 2.232c-.822.94-2.702 1.41-3.524 1.763.705.47-.118.94-1.411.588 0 .469-1.646 1.057-3.056.234.117.588-.824.823-1.881-.117-.235.469-.705.94-2.232-.353-.472.235-1.411 0-2.117-.94-.469.47-1.762 0-2.585-.94-.705.354-.822.236-1.527-.587-.706-.823-1.059-1.41-1.763-1.527">
-                                                </path>
-                                                <path fill="#259271"
-                                                    d="M78.408 145.881c1.175.822 3.878.118 4.583 1.528.471-.235 1.292 0 1.645.823.824-.352 2 0 2.468.941 1.176-.235 2.233 0 3.056.705.941-.705 1.881-.94 2.233-.119 1.644-1.292 3.291-2.116 3.291-.821.47-.706 2.351-1.764 3.174-1.764l.47 1.174c-.587 1.177-1.88 2.352-2.469 2.704.471.353-.822 1.176-1.411 1.411.237.706-.822 1.292-1.878.822-.236.823-1.293.588-2.821-.588.117.824-2.115 1.292-3.174.588-.588.47-2.585-.235-3.172-1.41-.706.353-1.763 0-2.233-1.058-.705.587-1.41.235-1.763-.939-.822.234-2.115-1.412-1.997-3.057m38.428-54.885c-1.175.94-1.88 1.999-.939 2.938-.824.939-1.88 1.646-.941 3.057-.236 1.292.117 2.35.941 2.938-.706.705-1.058 2.937 0 3.408-.236 1.175-.471 1.645.821 2.351-.587.94-.353 3.526.706 4.819h2.938c.118-1.881.352-3.997-.235-4.819.235-.94.471-2.469-.234-3.174.469-1.41.351-3.759-.237-3.172.706-2.233.119-4.114-.469-3.409.706-1.879 1.056-3.408.469-3.173.354-.94 1.998-3.174.706-2.821m1.645.234c-.354 1.41.823 2.468 1.292 3.29-1.058-.117-.47.942.353 2.585-.94 0-.823.707-.353 2.705-.704.116-.704 1.644-.354 2.937-.704.235-.35 1.764-.116 2.939-.588.234-.588 1.646-.352 2.703-.471.117-1.529 2.585-1.058 3.526l2.232.352c1.528-1.527 2.938-3.995 2.116-3.761 1.292-1.762 2.82-5.405 1.527-4.937.824-1.527 1.411-4.465.471-3.877.234-1.999 0-4.23-.471-3.409.236-1.41-.586-3.643-.938-2.938-.118-.823-.118-2.116-1.059-2.704m-8.503-29.338c-.897.899-1.133 2.192-.545 2.779-.587 1.174.354 2.468 1.058 3.055-.823 1.411-.704 3.41 0 3.762-.588.823-.823 2.233-.117 2.82-.706 1.057-.353 2.82.821 3.761l2.587.118c0-1.528.352-2.585-.354-3.644-.704-1.057 0-1.527 0-2.703s0-1.176-.587-2.351c-.587-1.174 1.176-3.408.237-4.466-.942-1.056-.354-2.938-.824-3.878s-.587-.94-1.174-1.292">
-                                                </path>
-                                                <path fill="#259271"
-                                                    d="M119.777 57.971c.235 1.057.469 2.232 1.175 3.171.704.942.354 1.411.941 2.822.588 1.41.234 2.116-.119 3.291-.352 1.175.119 1.881.588 3.057.47 1.174-.236 1.88-.353 2.82-.117.94-1.527 3.761-.47 4.818h2.115c.704-1.293.823-2.115.704-3.055-.116-.941.236-1.528.824-2.115.587-.587 1.058-2.585.469-3.057-.585-.47-.704-1.527-.233-1.996.469-.471.469-1.528.116-1.764.47-.706.824-2.117.236-2.585.234-1.175 0-2.352-1.175-2.703.117-.942-2.351-3.997-3.407-3.997m-80.86 68.283c1.058.94 1.411 2.35 1.646 3.174.353-.706 1.528.235 1.528 1.88.353-.352 1.292 1.88 1.057 3.291.706 0 .709 2.8.588 3.996.587.235.587 1.292.47 2.585l-1.058 1.411c-1.88-.94-4.231-3.29-3.173-3.172-.587-1.881-1.176-3.644-.587-3.174-.94-2.35-1.293-4.114-.706-3.761-.939-1.293-1.998-2.702-1.292-2.468-1.176-1.176-2.469-2.586-1.646-2.469-.94-.704-1.293-1.292-1.293-1.646">
-                                                </path>
-                                                <path fill="#259271"
-                                                    d="M35.275 124.607c.235 1.293-.118 2.352-.471 3.41.706-.237.823.118.471 1.41.704.235.352 2.233-.354 3.525.471.353.589 1.529.117 2.587.706 0 1.176 2.819 1.059 3.642.705-.235 1.41.939 2.115 1.997.353-.586 1.41-.351 2.115.588.47-.234 3.879.941 4.819 1.765l-.353 3.29c-1.411.471-4.819.234-3.996-.705-1.645.117-3.644-.94-2.937-1.176-2.117-.352-3.761-1.762-2.939-1.88-1.646-.939-2.702-2.82-1.881-2.82-1.058-.471-3.055-3.76-1.88-3.644-1.058-1.41-1.175-4.583-.234-3.644-.353-1.644-.353-4.23.47-3.525-.235-1.881-.588-3.174.235-2.703-.117-.824-.235-1.764 0-2.234m46.777 16.689c-2.116-1.058-2.82-.705-2.703.118-1.764-.234-4.232.236-3.409 1.059-1.528-.589-3.879-.235-3.173.823-1.528-.47-3.291-1.529-3.291-.706-1.761-.94-4.23-1.058-3.525 0-1.292-.352-2.704-.94-3.878-.587l-.118 2.232c.823.94 2.704 1.41 3.526 1.763-.706.47.118.94 1.411.588 0 .469 1.645 1.057 3.055.234-.118.588.822.823 1.881-.117.234.469.705.94 2.232-.353.47.235 1.41 0 2.116-.94.47.47 1.764 0 2.586-.94.704.354.821.236 1.527-.587.705-.823 1.059-1.41 1.764-1.527">
-                                                </path>
-                                                <path fill="#259271"
-                                                    d="M78.408 145.881c-1.176.822-3.88.118-4.584 1.528-.471-.235-1.293 0-1.646.823-.821-.352-1.997 0-2.468.941-1.174-.235-2.231 0-3.054.705-.941-.705-1.881-.94-2.233-.119-1.646-1.292-3.292-2.116-3.292-.821-.469-.706-2.351-1.764-3.173-1.764l-.47 1.174c.587 1.177 1.88 2.352 2.469 2.704-.471.353.821 1.176 1.41 1.411-.235.706.823 1.292 1.882.822.233.823 1.292.588 2.821-.588-.119.824 2.114 1.292 3.172.588.587.47 2.584-.235 3.173-1.41.704.353 1.764 0 2.232-1.058.706.587 1.41.235 1.764-.939.823.234 2.115-1.412 1.999-3.057M39.975 91.936c1.176.94 1.881 1.999.94 2.938.824.939 1.881 1.646.941 3.057.234 1.292-.117 2.35-.941 2.938.706.705 1.058 2.937 0 3.408.236 1.175.47 1.645-.823 2.351.588.94.354 3.526-.705 4.819H36.45c-.119-1.881-.353-3.997.234-4.819-.234-.94-.47-2.469.236-3.174-.47-1.41-.352-3.759.234-3.172-.705-2.233-.118-4.114.47-3.409-.704-1.879-1.056-3.408-.47-3.173-.352-.94-1.997-3.174-.705-2.821m-1.645.234c.353 1.41-.821 2.468-1.292 3.29 1.058-.117.471.942-.353 2.585.941 0 .824.707.353 2.705.706.116.706 1.644.353 2.937.705.235.353 1.764.118 2.939.587.234.587 1.646.351 2.703.47.117 1.527 2.585 1.059 3.526l-2.233.352c-1.528-1.527-2.938-3.995-2.116-3.761-1.293-1.762-2.821-5.405-1.528-4.937-.823-1.527-1.411-4.465-.47-3.877-.234-1.999 0-4.23.47-3.409-.234-1.41.588-3.643.94-2.938.118-.823.118-2.116 1.059-2.704m8.502-29.338c.898.899 1.134 2.192.546 2.779.588 1.174-.354 2.468-1.059 3.055.823 1.411.705 3.41 0 3.762.587.823.823 2.233.117 2.82.706 1.057.353 2.82-.822 3.761l-2.585.118c0-1.528-.353-2.585.354-3.644.704-1.057 0-1.527 0-2.703s0-1.176.586-2.351c.588-1.174-1.175-3.408-.234-4.466.941-1.056.353-2.938.822-3.878.47-.94.587-.94 1.174-1.292">
-                                                </path>
-                                                <path fill="#259271"
-                                                    d="M37.037 57.971c-.234 1.057-.468 2.232-1.175 3.171-.704.942-.351 1.411-.94 2.822-.587 1.41-.235 2.116.117 3.291.354 1.175-.117 1.881-.587 3.057-.469 1.174.234 1.88.353 2.82.117.94 1.527 3.761.471 4.818H33.16c-.706-1.293-.823-2.115-.706-3.055.118-.941-.234-1.528-.823-2.115-.587-.587-1.058-2.585-.47-3.057.587-.47.706-1.527.235-1.996-.47-.471-.47-1.528-.117-1.764-.471-.706-.824-2.117-.236-2.585-.235-1.175 0-2.352 1.176-2.703-.119-.942 2.351-3.997 3.408-3.997">
-                                                </path>
-                                                <path fill="#f0c560" stroke="#000" stroke-width="0.724"
-                                                    d="m126.476 125.284-2.586-8.316h-6.464l-2.585 8.316zm-9.05-12.193h6.464v3.877h-6.464zm6.464 0h-6.464l-2.351-2.468c.706-.824 1.176-.824 1.881-1.059l1.057 1.293h1.294v-1.763h2.349v1.88h1.529l.705-1.293c.822.471 1.645 1.057 1.998 1.528z">
-                                                </path>
-                                                <path fill="#f0c560" stroke="#000" stroke-width="0.724"
-                                                    d="M119.545 113.091h1.981v3.877h-1.981zm-1.532 12.193.823-3.848c.354-1.88 2.469-1.88 3.057 0l.939 3.848h-4.819zm8.463-33.494-2.586-8.316h-6.464l-2.585 8.316zm-9.05-12.195h6.464v3.878h-6.464zm6.464 0h-6.464l-2.351-2.467c.706-.824 1.176-.824 1.881-1.058l1.057 1.292h1.294V75.6h2.349v1.88h1.529l.705-1.293c.822.47 1.645 1.057 1.998 1.527l-1.998 1.881z">
-                                                </path>
-                                                <path fill="#f0c560" stroke="#000" stroke-width="0.724"
-                                                    d="M119.545 79.595h1.981v3.878h-1.981zm-1.532 12.195.823-3.851c.354-1.88 2.469-1.88 3.057 0l.939 3.851h-4.819zm5.254-36.058-7.335-4.693-4.943 4.167 3.382 8.023zM108.488 52.234l4.942-4.164 2.5 2.967-4.942 4.164z">
-                                                </path>
-                                                <path fill="#f0c560" stroke="#000" stroke-width="0.724"
-                                                    d="m113.431 48.074-4.942 4.165-3.388-.372c.01-1.083.368-1.387.756-2.021l1.641.306.99-.833-1.136-1.347 1.797-1.515 1.212 1.437 1.167-.984-.293-1.443c.932-.17 1.939-.251 2.513-.118l-.317 2.725zM110.117 50.872l1.515-1.277 2.5 2.965-1.515 1.277zM116.796 61.186l-1.851-3.474c-.943-1.664.675-3.028 2.336-1.97l3.199 2.338-3.684 3.106zm-18.135 90.45 7.928-3.601-.806-6.413-8.573-1.529zM109.632 141.144l.807 6.415-3.848.484-.806-6.415z">
-                                                </path>
-                                                <path fill="#f0c560" stroke="#000" stroke-width="0.724"
-                                                    d="m110.438 147.553-.807-6.415 2.156-2.64c.905.596.963 1.062 1.284 1.734l-1.149 1.209.16 1.284 1.75-.22.292 2.332-1.865.233.189 1.517 1.372.539c-.365.875-.846 1.765-1.268 2.173zM109.884 143.24l.247 1.966-3.849.482-.246-1.966zM97.606 143.243l3.922.334c1.91.116 2.174 2.216.38 3.032l-3.701 1.414zm-67.268-17.959 2.586-8.316h6.464l2.585 8.316zm2.586-12.193h6.463v3.877h-6.463zm0 0h6.463l2.351-2.468c-.706-.824-1.175-.824-1.881-1.059l-1.058 1.293h-1.293v-1.763h-2.35v1.88h-1.528l-.705-1.293c-.824.471-1.645 1.057-1.998 1.528z">
-                                                </path>
-                                                <path fill="#f0c560" stroke="#000" stroke-width="0.724"
-                                                    d="M35.288 113.091h1.981v3.877h-1.981zm3.512 12.193-.822-3.848c-.354-1.88-2.468-1.88-3.057 0l-.938 3.848zM30.338 91.79l2.586-8.316h6.464l2.585 8.316zm2.586-12.195h6.463v3.878h-6.463zm0 0h6.463l2.351-2.467c-.706-.824-1.175-.824-1.881-1.058L38.8 77.362h-1.293V75.6h-2.35v1.88h-1.528l-.705-1.293c-.824.47-1.645 1.057-1.998 1.527l1.998 1.881z">
-                                                </path>
-                                                <path fill="#f0c560" stroke="#000" stroke-width="0.724"
-                                                    d="M35.288 79.595h1.981v3.878h-1.981zM38.8 91.79l-.822-3.851c-.354-1.88-2.468-1.88-3.057 0l-.938 3.851zm-5.254-36.058 7.337-4.693 4.942 4.167-3.381 8.023z">
-                                                </path>
-                                                <path fill="#f0c560" stroke="#000" stroke-width="0.724"
-                                                    d="m45.824 55.205-4.942-4.165 2.5-2.966 4.941 4.165zM43.382 48.074l4.942 4.165 3.389-.372c-.01-1.083-.37-1.387-.758-2.021l-1.641.306-.989-.833 1.136-1.347-1.797-1.515-1.21 1.437-1.169-.984.294-1.443c-.931-.17-1.939-.251-2.513-.118l.316 2.725z">
-                                                </path>
-                                                <path fill="#f0c560" stroke="#000" stroke-width="0.724"
-                                                    d="m44.203 53.835-1.514-1.277 2.5-2.964 1.514 1.277zM40.017 61.186l1.852-3.474c.943-1.664-.675-3.028-2.337-1.97l-3.199 2.338 3.684 3.106zm18.135 90.45-7.927-3.601.806-6.413 8.571-1.529zM51.03 141.621l-.806 6.415-3.848-.484.806-6.414z">
-                                                </path>
-                                                <path fill="#f0c560" stroke="#000" stroke-width="0.724"
-                                                    d="m46.376 147.553.806-6.415-2.158-2.64c-.903.596-.961 1.062-1.283 1.734l1.151 1.209-.161 1.284-1.75-.22-.293 2.332 1.865.233-.189 1.517-1.37.539c.363.875.842 1.765 1.267 2.173l2.115-1.746zM50.77 143.727l-.248 1.965-3.846-.485.248-1.965zM59.206 143.243l-3.92.334c-1.91.116-2.174 2.216-.381 3.032l3.702 1.414.599-4.78z">
-                                                </path>
-                                                <path
-                                                    d="M110.258 73.836c-.825.705 0 2.351 1.056 1.292l1.881-1.997c1.059.705 2.117.821 3.41.94-2.117-1.292-4.467-3.878-5.054-5.758-.237 1.174.117 2.82.468 3.76l-1.761 1.763z">
-                                                </path>
-                                                <path
-                                                    d="m113.078 71.016 14.456-14.22c1.057-.941 1.645-.823 2.349-.941-.233.588-.822 1.292-1.292 1.998L114.02 72.074m-3.619 34.683c-.894.612-.25 2.336.913 1.397l2.082-1.787c.977.813 2.016 1.042 3.29 1.297-1.966-1.509-4.028-4.331-4.412-6.263-.36 1.145-.185 2.816.066 3.79l-1.939 1.566z">
-                                                </path>
-                                                <path
-                                                    d="m113.506 104.252 15.885-12.602c1.152-.825 1.725-.645 2.438-.687-.296.56-.956 1.199-1.499 1.85l-16.003 12.59m-6.239 29.233c-1.042.294-.989 2.132.416 1.616l2.546-1.02c.664 1.084 1.573 1.635 2.698 2.285-1.375-2.062-2.421-5.397-2.164-7.351-.709.968-1.081 2.611-1.155 3.611z">
-                                                </path>
-                                                <path
-                                                    d="m111.833 133.262 19.095-6.825c1.356-.408 1.84-.054 2.529.135-.46.435-1.29.827-2.012 1.27l-19.204 6.775m-26.239 2.261c-.532-.944-2.304-.458-1.473.785l1.594 2.234c-.897.9-1.218 1.914-1.584 3.16 1.68-1.823 4.673-3.625 6.632-3.837-1.108-.459-2.791-.433-3.781-.271l-1.388-2.071z">
-                                                </path>
-                                                <path
-                                                    d="m88.221 140.193 11.137 16.946c.717 1.221.487 1.774.466 2.488-.531-.344-1.108-1.058-1.708-1.656L87 140.91M46.557 73.836c.822.705 0 2.351-1.058 1.292l-1.88-1.997c-1.058.705-2.118.821-3.41.94 2.116-1.292 4.466-3.878 5.055-5.758.235 1.174-.118 2.82-.47 3.76l1.763 1.763z">
-                                                </path>
-                                                <path
-                                                    d="m43.737 71.016-14.456-14.22c-1.058-.941-1.646-.823-2.35-.941.234.588.821 1.292 1.292 1.998l14.573 14.221m3.617 34.683c.893.612.251 2.336-.914 1.397l-2.082-1.787c-.978.813-2.017 1.042-3.29 1.297 1.967-1.509 4.03-4.331 4.414-6.263.358 1.145.183 2.816-.067 3.79z">
-                                                </path>
-                                                <path
-                                                    d="M43.308 104.252 27.423 91.651c-1.153-.825-1.724-.645-2.437-.687.295.56.956 1.199 1.496 1.85l16.004 12.59m6.24 29.232c1.042.294.988 2.132-.417 1.616l-2.546-1.02c-.663 1.084-1.575 1.635-2.698 2.285 1.375-2.062 2.421-5.397 2.164-7.351.709.968 1.081 2.611 1.155 3.611z">
-                                                </path>
-                                                <path
-                                                    d="m44.981 133.262-19.095-6.825c-1.354-.408-1.84-.054-2.529.135.461.435 1.291.827 2.014 1.27l19.202 6.775m26.239 2.261c.532-.944 2.306-.458 1.473.785l-1.594 2.234c.898.9 1.218 1.914 1.586 3.16-1.68-1.823-4.674-3.625-6.632-3.837 1.107-.459 2.789-.433 3.779-.271l1.388-2.071z">
-                                                </path>
-                                                <path
-                                                    d="m68.593 140.193-11.137 16.946c-.717 1.221-.487 1.774-.466 2.488.53-.344 1.108-1.058 1.708-1.656l11.114-17.061">
-                                                </path>
-                                                <circle cx="78.408" cy="144.823" r="3.656" fill="#cc1e4c" stroke="#000"
-                                                    stroke-width="0.724"></circle>
-                                                <path fill="#f0c560" stroke="#000" stroke-width="0.724"
-                                                    d="M54.549 102.161c3.996-3.292 12.222-3.645 17.159-.353l1.998-1.646c-5.758-3.996-15.866-3.878-21.037.235">
-                                                </path>
-                                                <path fill="#65493c" stroke="#000" stroke-width="0.724"
-                                                    d="M66.655 101.809c.706-.354 1.998.117 2.116.939.117.824 1.318 2.893 3.643 2.235 2.324-.659.471-4.232 1.645-5.407-1.057.469-2.468 1.41-3.056 2.233-.587.822-1.175.47-1.41-.588-.235-1.059-1.293-1.527-1.881-.823-.588.704-1.057 1.411-1.057 1.411z">
-                                                </path>
-                                                <path fill="#f0c560" stroke="#000" stroke-width="0.724"
-                                                    d="m67.947 128.692 1.54-22.536h3.852l1.542 22.536z"></path>
-                                                <path fill="#f0c560" stroke="#000" stroke-width="0.724"
-                                                    d="M68.767 116.499h5.173l1.881-2.468c-.563-.822-.941-.822-1.503-1.058l-.848 1.293h-1.035v-1.763h-1.881v1.881h-1.223l-.563-1.292c-.659.469-1.316 1.057-1.599 1.528zm4.222 12.193-.489-3.848c-.209-1.88-1.47-1.88-1.821 0l-.561 3.848h2.871zm-3.492-22.536h3.843l1.398-1.833c-.419-.611-.698-.611-1.118-.785l-.629.959h-.768v-1.31h-1.398v1.398h-.908l-.419-.961c-.49.349-.978.786-1.188 1.136z">
-                                                </path>
-                                                <path fill="#65493c" stroke="#000" stroke-width="0.724"
-                                                    d="M58.897 101.809c-.707-.354-1.999.117-2.117.939-.117.824-1.319 2.893-3.641 2.235-2.326-.659-.471-4.232-1.647-5.407 1.058.469 2.469 1.41 3.056 2.233.588.822 1.176.47 1.411-.588.234-1.059 1.293-1.527 1.88-.823a17.991 17.991 0 0 1 1.058 1.411z">
-                                                </path>
-                                                <path fill="#f0c560" stroke="#000" stroke-width="0.724"
-                                                    d="m57.605 128.692-1.541-22.536H52.21l-1.54 22.536z"></path>
-                                                <path fill="#f0c560" stroke="#000" stroke-width="0.724"
-                                                    d="M56.784 116.499h-5.173l-1.882-2.468c.566-.822.943-.822 1.505-1.058l.847 1.293h1.034v-1.763h1.882v1.881h1.222l.565-1.292c.658.469 1.316 1.057 1.599 1.528zm-4.222 12.193.491-3.848c.209-1.88 1.471-1.88 1.82 0l.562 3.848zm3.492-22.536H52.21l-1.396-1.833c.418-.611.698-.611 1.117-.785l.629.959h.77v-1.31h1.398v1.398h.909l.417-.961c.489.349.98.786 1.188 1.136z">
-                                                </path>
-                                                <path fill="#1879bf" stroke="#000" stroke-width="0.724"
-                                                    d="m59.837 115.795-.821 13.161h6.933l-1.058-13.397c-.117-.822 0-1.999.471-2.82.469-.822.352-3.41.352-5.171 0-1.764-.94-2.585-1.528-2.704l-1.292-.235h-1.175c-1.999.704-2.235 1.528-2.468 3.057-.234 1.528-.234 3.525-.588 4.348-.353.821-.235 3.054 1.174 3.761z">
-                                                </path>
-                                                <path fill="#f0c560" stroke="#000" stroke-width="0.724"
-                                                    d="m61.013 101.692-.587-1.882.939.587.705-.821.353 1.057 1.057-.823.472 1.176.705-.589-.824 2.116">
-                                                </path>
-                                                <path fill="#e6ac86" stroke="#000" stroke-width="0.724"
-                                                    d="M61.013 104.394c-.137-.82-.353-3.057.47-3.057s2.35-.036 2.35 1.647c0 2.585-2.468 3.525-2.82 1.41zm-.704 8.579c-.825.94-.942 2.351-.118 2.585.823.236 1.411-.822 1.411-1.645-.001-.822-1.059-1.41-1.293-.94z">
-                                                </path>
-                                                <path fill="#f0c560" stroke="#000" stroke-width="0.724"
-                                                    d="M85.459 65.257c3.996-3.29 12.222-3.644 17.159-.353l1.998-1.644c-5.759-3.997-15.867-3.878-21.038.235">
-                                                </path>
-                                                <path fill="#65493c" stroke="#000" stroke-width="0.724"
-                                                    d="M97.564 64.904c.704-.351 1.997.118 2.114.941.118.821 1.319 2.891 3.645 2.231 2.325-.658.469-4.231 1.645-5.405-1.057.47-2.469 1.41-3.056 2.232-.587.823-1.176.47-1.411-.588-.234-1.056-1.293-1.527-1.88-.821a18.764 18.764 0 0 0-1.057 1.41z">
-                                                </path>
-                                                <path fill="#f0c560" stroke="#000" stroke-width="0.724"
-                                                    d="m98.857 91.79 1.542-22.538h3.851l1.542 22.538z"></path>
-                                                <path fill="#f0c560" stroke="#000" stroke-width="0.724"
-                                                    d="M99.676 79.595h5.175l1.879-2.467c-.564-.824-.939-.824-1.505-1.058l-.846 1.292h-1.034V75.6h-1.882v1.88h-1.222l-.565-1.293c-.658.47-1.317 1.057-1.599 1.527l1.599 1.881zm4.223 12.195-.489-3.851c-.211-1.88-1.471-1.88-1.822 0l-.56 3.851h2.871zm-3.492-22.538h3.843l1.398-1.833c-.42-.611-.699-.611-1.119-.786l-.628.962h-.77v-1.311h-1.398v1.397h-.907l-.42-.959c-.489.348-.978.785-1.188 1.133l1.189 1.397z">
-                                                </path>
-                                                <path fill="#65493c" stroke="#000" stroke-width="0.724"
-                                                    d="M89.808 64.904c-.705-.351-1.998.118-2.116.941-.119.821-1.318 2.891-3.643 2.231-2.326-.658-.471-4.231-1.646-5.405 1.058.47 2.467 1.41 3.056 2.232.587.823 1.175.47 1.41-.588.234-1.056 1.292-1.527 1.88-.821.588.705 1.059 1.41 1.059 1.41z">
-                                                </path>
-                                                <path fill="#f0c560" stroke="#000" stroke-width="0.724"
-                                                    d="m88.515 91.79-1.541-22.538h-3.852L81.58 91.79z"></path>
-                                                <path fill="#f0c560" stroke="#000" stroke-width="0.724"
-                                                    d="M87.695 79.595h-5.174l-1.882-2.467c.566-.824.941-.824 1.506-1.058l.846 1.292h1.036V75.6h1.88v1.88h1.224l.564-1.293c.657.47 1.316 1.057 1.598 1.527l-1.598 1.881zM83.471 91.79l.491-3.851c.21-1.88 1.471-1.88 1.82 0l.562 3.851h-2.873zm3.492-22.538h-3.841l-1.398-1.833c.418-.611.699-.611 1.118-.786l.629.962h.768v-1.311h1.397v1.397h.909l.417-.959c.49.348.98.785 1.19 1.133l-1.189 1.397z">
-                                                </path>
-                                                <path fill="#1879bf" stroke="#000" stroke-width="0.724"
-                                                    d="m90.747 78.891-.822 13.163h6.933l-1.057-13.399c-.118-.824 0-1.999.471-2.821.47-.823.352-3.408.352-5.172 0-1.761-.94-2.585-1.527-2.703l-1.293-.233h-1.176c-1.997.704-2.231 1.526-2.468 3.055-.234 1.528-.234 3.526-.587 4.348-.353.823-.236 3.056 1.174 3.762z">
-                                                </path>
-                                                <path fill="#f0c560" stroke="#000" stroke-width="0.724"
-                                                    d="m91.923 64.788-.589-1.882.941.589.705-.823.353 1.057 1.058-.823.47 1.176.704-.587-.821 2.114">
-                                                </path>
-                                                <path fill="#e6ac86" stroke="#000" stroke-width="0.724"
-                                                    d="M91.923 67.49c-.137-.819-.353-3.055.47-3.055s2.351-.038 2.351 1.646c0 2.585-2.469 3.525-2.821 1.409zm-.706 8.58c-.821.94-.94 2.351-.117 2.585.823.236 1.41-.824 1.41-1.646s-1.058-1.409-1.293-.939z">
-                                                </path>
-                                                <path fill="#f0c560" stroke="#000" stroke-width="0.724"
-                                                    d="m106.496 130.573-1.419-4.564h-3.548l-1.419 4.564zm-1.419-4.577h-3.548l-.92-1.354c.387-.452.646-.452 1.033-.581l.21.709h.709v-.968h1.288v1.033h.47l.387-.71c.452.258.797.581.99.838l-.619 1.033z">
-                                                </path>
-                                                <path fill="#f0c560" stroke="#000" stroke-width="0.724"
-                                                    d="m101.852 130.573.451-2.112c.193-1.033 1.355-1.033 1.677 0l.517 2.112zm4.337-13.516-1.418-4.563h-3.547l-1.419 4.563zm-1.418-4.576h-3.547l-.92-1.355c.387-.452.644-.452 1.032-.579l.211.708h.708v-.967h1.291v1.033h.468l.388-.71c.45.256.797.581.99.838z">
-                                                </path>
-                                                <path fill="#f0c560" stroke="#000" stroke-width="0.724"
-                                                    d="m101.546 117.057.451-2.111c.194-1.033 1.354-1.033 1.676 0l.517 2.111h-2.644zm4.95-11.752-1.419-4.564h-3.548l-1.419 4.564zm-1.419-4.577h-3.548l-.92-1.354c.387-.452.646-.452 1.033-.581l.21.71h.709v-.969h1.288v1.033h.47l.387-.709c.452.259.797.581.99.838l-.619 1.032z">
-                                                </path>
-                                                <path fill="#f0c560" stroke="#000" stroke-width="0.724"
-                                                    d="m101.852 105.305.451-2.113c.193-1.032 1.355-1.032 1.677 0l.517 2.113zm-15.576 25.268-1.419-4.564h-3.546l-1.419 4.564zm-1.419-4.577H81.31l-.92-1.354c.387-.452.645-.452 1.033-.581l.21.709h.709v-.968h1.29v1.033h.469l.386-.71c.452.258.797.581.992.838z">
-                                                </path>
-                                                <path fill="#f0c560" stroke="#000" stroke-width="0.724"
-                                                    d="m81.633 130.573.451-2.112c.193-1.033 1.354-1.033 1.678 0l.515 2.112h-2.644zm4.643-13.516-1.419-4.563h-3.546l-1.419 4.563zm-1.419-4.576H81.31l-.92-1.355c.387-.452.645-.452 1.033-.579l.21.708h.709v-.967h1.29v1.033h.469l.386-.71c.452.256.797.581.992.838z">
-                                                </path>
-                                                <path fill="#f0c560" stroke="#000" stroke-width="0.724"
-                                                    d="m81.633 117.057.451-2.111c.193-1.033 1.354-1.033 1.678 0l.515 2.111h-2.644zm4.643-11.752-1.419-4.564h-3.546l-1.419 4.564zm-1.419-4.577H81.31l-.92-1.354c.387-.452.645-.452 1.033-.581l.21.71h.709v-.969h1.29v1.033h.469l.386-.709c.452.259.797.581.992.838l-.622 1.032z">
-                                                </path>
-                                                <path fill="#f0c560" stroke="#000" stroke-width="0.724"
-                                                    d="m81.633 105.305.451-2.113c.193-1.032 1.354-1.032 1.678 0l.515 2.113h-2.644zm15.096 0-1.419-4.564h-3.547l-1.42 4.564zm-1.419-4.577h-3.546l-.919-1.354c.385-.452.645-.452 1.032-.581l.21.71h.708v-.969h1.29v1.033h.469l.387-.709c.451.259.797.581.991.838l-.622 1.032z">
-                                                </path>
-                                                <path fill="#f0c560" stroke="#000" stroke-width="0.724"
-                                                    d="m92.086 105.305.45-2.113c.194-1.032 1.355-1.032 1.676 0l.518 2.113z">
-                                                </path>
-                                                <path fill="#fff" stroke="#000" stroke-width="0.724"
-                                                    d="M99.554 106.422v14.513c0 2.146-.985 3.438-2.847 3.438h-2.292c-.578 0-1.258.206-1.435.735-.176-.53-.854-.735-1.436-.735h-2.291c-1.861 0-2.847-1.293-2.847-3.438v-14.513h13.148z">
-                                                </path>
-                                                <path fill="#1879bf"
-                                                    d="m91.334 107.861.706 3.349h1.647l.585-3.349zm0 12.575.706-3.35h1.647l.585 3.35zm-4.053-4.995 3.349-.704v-1.646l-3.349-.588zm10.811 0-3.348-.704v-1.646l3.348-.588zm-6.287-2.586h1.998v2.468h-1.998z">
-                                                </path>
-                                                <path fill="#f0c560" stroke="#000" stroke-width="0.724"
-                                                    d="m76.409 93.67-1.419-4.564h-3.548l-1.419 4.564zm-1.419-4.577h-3.548l-.92-1.356c.387-.45.646-.45 1.033-.58l.21.709h.71v-.968h1.29v1.033h.468l.388-.708c.452.258.797.579.99.838z">
-                                                </path>
-                                                <path fill="#f0c560" stroke="#000" stroke-width="0.724"
-                                                    d="m71.765 93.67.452-2.112c.193-1.033 1.355-1.033 1.677 0l.516 2.112h-2.645zm4.339-13.517-1.42-4.563h-3.547l-1.42 4.563zm-1.42-4.575h-3.547l-.92-1.355c.387-.45.646-.45 1.032-.58l.212.709h.708v-.967h1.291v1.031h.468l.388-.709c.451.258.796.581.99.838z">
-                                                </path>
-                                                <path fill="#f0c560" stroke="#000" stroke-width="0.724"
-                                                    d="m71.46 80.153.45-2.111c.193-1.032 1.355-1.032 1.677 0l.516 2.111zm4.949-11.752-1.419-4.564h-3.548l-1.419 4.564zm-1.419-4.577h-3.548l-.92-1.354c.387-.453.646-.453 1.033-.582l.21.71h.71v-.968h1.29v1.033h.468l.388-.71c.452.258.797.581.99.838z">
-                                                </path>
-                                                <path fill="#f0c560" stroke="#000" stroke-width="0.724"
-                                                    d="m71.765 68.401.452-2.112c.193-1.033 1.355-1.033 1.677 0l.516 2.112h-2.645zM56.189 93.67l-1.418-4.564h-3.549l-1.417 4.564zm-1.418-4.577h-3.549l-.919-1.356c.387-.45.645-.45 1.033-.58l.21.709h.709v-.968h1.29v1.033h.469l.386-.708c.453.258.797.579.992.838l-.621 1.032z">
-                                                </path>
-                                                <path fill="#f0c560" stroke="#000" stroke-width="0.724"
-                                                    d="m51.546 93.67.451-2.112c.193-1.033 1.354-1.033 1.677 0l.515 2.112zm4.643-13.517-1.418-4.563h-3.549l-1.417 4.563zm-1.418-4.575h-3.549l-.919-1.355c.387-.45.645-.45 1.033-.58l.21.709h.709v-.967h1.29v1.031h.469l.386-.709c.453.258.797.581.992.838l-.621 1.033z">
-                                                </path>
-                                                <path fill="#f0c560" stroke="#000" stroke-width="0.724"
-                                                    d="m51.546 80.153.451-2.111c.193-1.032 1.354-1.032 1.677 0l.515 2.111zm4.643-11.752-1.418-4.564h-3.549l-1.417 4.564zm-1.418-4.577h-3.549l-.919-1.354c.387-.453.645-.453 1.033-.582l.21.71h.709v-.968h1.29v1.033h.469l.386-.71c.453.258.797.581.992.838l-.621 1.033z">
-                                                </path>
-                                                <path fill="#f0c560" stroke="#000" stroke-width="0.724"
-                                                    d="m51.546 68.401.451-2.112c.193-1.033 1.354-1.033 1.677 0l.515 2.112zm15.097 0-1.42-4.564h-3.548l-1.418 4.564zm-1.42-4.577h-3.547l-.919-1.354c.386-.453.645-.453 1.033-.582l.209.71h.709v-.968h1.29v1.033h.469l.387-.71a3.4 3.4 0 0 1 .991.838l-.622 1.033z">
-                                                </path>
-                                                <path fill="#f0c560" stroke="#000" stroke-width="0.724"
-                                                    d="m61.999 68.401.45-2.112c.194-1.033 1.356-1.033 1.677 0l.518 2.112z">
-                                                </path>
-                                                <path fill="#fff" stroke="#000" stroke-width="0.724"
-                                                    d="M69.467 69.518v14.515c0 2.143-.987 3.438-2.847 3.438h-2.292c-.58 0-1.259.205-1.435.733-.177-.529-.856-.733-1.436-.733h-2.291c-1.862 0-2.846-1.295-2.846-3.438V69.518h13.147z">
-                                                </path>
-                                                <path fill="#1879bf"
-                                                    d="m61.248 70.957.705 3.35h1.646l.587-3.35zm0 12.576.705-3.349h1.646l.587 3.349zm-4.054-4.994 3.349-.707v-1.645l-3.349-.587zm10.811 0-3.348-.707v-1.645l3.348-.587zm-6.286-2.587h1.997v2.469h-1.997z">
-                                                </path>
-                                                <path fill="#cc1e4c" stroke="#000" stroke-width="0.724"
-                                                    d="M67.829 4.613c-1.174-.352-1.998-.47-2.704 0-.704.471.118 1.175.824.941.706-.236 1.175-.941 1.88-.941z">
-                                                </path>
-                                            </svg>
+                                        <div class="content-top__left">
                                             <div>
-                                                <h4 class="content-top__main-title">FC Porto Fan Token</h4>
-                                                <h4 class="content-top__subtitle">PORTO</h4>
+                                                <h4 class="content-top__main-title">Sữa VN</h4>
+                                                <h4 class="content-top__subtitle">VNM</h4>
                                             </div>
                                         </div>
                                         <div class="content-top__right">
@@ -1160,18 +504,10 @@
                                         </div>
                                     </div>
                                     <div class="content-top__item">
-                                        <div class="content-top__left"><svg xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 32 32" class="svg-25px">
-                                                <g fill="none" fill-rule="evenodd">
-                                                    <circle cx="16" cy="16" r="16" fill="#136AAD"></circle>
-                                                    <path fill="#FFF"
-                                                        d="m7 11.09 2.667 1.13v6.353L16 14.786l6.394 3.787V12.22L25 11.09v11.974l-9-5.315-9 5.315zm.303-.489L16 5.5l8.758 5.101-2.364.978L16 7.883l-6.333 3.696zm1.879 11.821 1.97-1.13 4.878 2.825 4.818-2.825 2.03 1.13L16.03 26.5l-6.848-4.078z">
-                                                    </path>
-                                                </g>
-                                            </svg>
+                                        <div class="content-top__left">
                                             <div>
-                                                <h4 class="content-top__main-title">Orion Protocol</h4>
-                                                <h4 class="content-top__subtitle">ORN</h4>
+                                                <h4 class="content-top__main-title">TMCP Quốc tế VN</h4>
+                                                <h4 class="content-top__subtitle">VIB</h4>
                                             </div>
                                         </div>
                                         <div class="content-top__right">
@@ -1222,7 +558,7 @@
                                                     d="m1.272 6.732.294-.405-.294.405 3.916 2.844-1.496 4.603c-.173.534.438.979.893.648L8.5 11.983l3.915 2.844c.455.33 1.067-.114.893-.648l-1.496-4.603 3.916-2.844c.454-.33.22-1.05-.341-1.05h-4.84L9.052 1.08c-.174-.535-.93-.535-1.104 0L6.453 5.682h-4.84c-.562 0-.795.72-.34 1.05Zm5.087-.76.399.13-.4-.13Z">
                                                 </path>
                                             </svg></div>
-                                        <div>
+                                        <div style="margin-left: -50px;">
                                             <h5>Token <svg xmlns="http://www.w3.org/2000/svg" width="3" height="3"
                                                     fill="none">
                                                     <path fill="#2C406E"
@@ -1239,7 +575,7 @@
                                                     </svg></div>
                                             </div>
                                         </div>
-                                        <div>
+                                        <div style="margin-left: -50px;">
                                             <h5>Price <svg xmlns="http://www.w3.org/2000/svg" width="3" height="3"
                                                     fill="none">
                                                     <path fill="#2C406E"
@@ -1249,7 +585,7 @@
                                             <div class="inputs"><input type="number" placeholder="from" value=""><input
                                                     type="number" placeholder="to" value=""></div>
                                         </div>
-                                        <div>
+                                        <div style="margin-left: -50px;">
                                             <h5>Market Cap <svg xmlns="http://www.w3.org/2000/svg" width="3" height="3"
                                                     fill="none">
                                                     <path fill="#2C406E"
@@ -1259,7 +595,7 @@
                                             <div class="inputs"><input type="number" placeholder="from" value=""><input
                                                     type="number" placeholder="to" value=""></div>
                                         </div>
-                                        <div>
+                                        <div style="margin-left: -50px;">
                                             <h5>Volume <svg xmlns="http://www.w3.org/2000/svg" width="3" height="3"
                                                     fill="none">
                                                     <path fill="#2C406E"
@@ -1269,7 +605,7 @@
                                             <div class="inputs"><input type="number" placeholder="from" value=""><input
                                                     type="number" placeholder="to" value=""></div>
                                         </div>
-                                        <div>
+                                        <div style="margin-left: -50px;">
                                             <h5>Social Following <svg xmlns="http://www.w3.org/2000/svg" width="3"
                                                     height="3" fill="none">
                                                     <path fill="#2C406E"
@@ -1280,7 +616,7 @@
                                                     type="number" placeholder="to" value=""
                                                     data-listener-added_1651aeb8="true"></div>
                                         </div>
-                                        <div>
+                                        <div style="margin-left: -50px;">
                                             <h5>Social Interactions <svg xmlns="http://www.w3.org/2000/svg" width="3"
                                                     height="3" fill="none">
                                                     <path fill="#2C406E"
@@ -1290,7 +626,7 @@
                                             <div class="inputs"><input type="number" placeholder="from" value=""><input
                                                     type="number" placeholder="to" value=""></div>
                                         </div>
-                                        <div>
+                                        <div style="margin-left: -50px;">
                                             <h5>Circulating Suppy <svg xmlns="http://www.w3.org/2000/svg" width="3"
                                                     height="3" fill="none">
                                                     <path fill="#2C406E"
@@ -1340,27 +676,12 @@
                                                                     </path>
                                                                 </svg></div>
                                                         </td>
-                                                        <td><a href="/market/0"><svg xmlns="http://www.w3.org/2000/svg"
-                                                                    width="14" height="17" fill="none">
-                                                                    <path stroke="#2B7AFF" stroke-width="1.5"
-                                                                        d="M4.333 8.5h5m-5 3.333h5M11 16H2.667A1.667 1.667 0 0 1 1 14.333V2.667A1.667 1.667 0 0 1 2.667 1h4.655c.22 0 .433.088.589.244l4.512 4.512a.834.834 0 0 1 .244.589v7.988A1.666 1.666 0 0 1 11 16Z">
-                                                                    </path>
-                                                                </svg></a></td>
+                                                        
                                                         <td><a href="/market/0">
-                                                                <div class="row-2"><svg
-                                                                        xmlns="http://www.w3.org/2000/svg"
-                                                                        viewBox="0 0 32 32" class="svg-37px">
-                                                                        <g fill="none" fill-rule="evenodd">
-                                                                            <circle cx="16" cy="16" r="16"
-                                                                                fill="#F7931A"></circle>
-                                                                            <path fill="#FFF" fill-rule="nonzero"
-                                                                                d="M23.189 14.02c.314-2.096-1.283-3.223-3.465-3.975l.708-2.84-1.728-.43-.69 2.765c-.454-.114-.92-.22-1.385-.326l.695-2.783L15.596 6l-.708 2.839c-.376-.086-.746-.17-1.104-.26l.002-.009-2.384-.595-.46 1.846s1.283.294 1.256.312c.7.175.826.638.805 1.006l-.806 3.235c.048.012.11.03.18.057l-.183-.045-1.13 4.532c-.086.212-.303.531-.793.41.018.025-1.256-.313-1.256-.313l-.858 1.978 2.25.561c.418.105.828.215 1.231.318l-.715 2.872 1.727.43.708-2.84c.472.127.93.245 1.378.357l-.706 2.828 1.728.43.715-2.866c2.948.558 5.164.333 6.097-2.333.752-2.146-.037-3.385-1.588-4.192 1.13-.26 1.98-1.003 2.207-2.538zm-3.95 5.538c-.533 2.147-4.148.986-5.32.695l.95-3.805c1.172.293 4.929.872 4.37 3.11m.535-5.569c-.487 1.953-3.495.96-4.47.717l.86-3.45c.975.243 4.118.696 3.61 2.733">
-                                                                            </path>
-                                                                        </g>
-                                                                    </svg>
+                                                                <div class="row-2">
                                                                     <div>
-                                                                        <h5>Bitcoin</h5>
-                                                                        <h5 style="color: rgb(166, 178, 205);">BTC</h5>
+                                                                        <h5>Vincom Retail</h5>
+                                                                        <h5 style="color: rgb(166, 178, 205);">VRE</h5>
                                                                     </div>
                                                                 </div>
                                                             </a></td>
@@ -1464,43 +785,12 @@
                                                                     </path>
                                                                 </svg></div>
                                                         </td>
-                                                        <td><a href="/market/1"><svg xmlns="http://www.w3.org/2000/svg"
-                                                                    width="14" height="17" fill="none">
-                                                                    <path stroke="#2B7AFF" stroke-width="1.5"
-                                                                        d="M4.333 8.5h5m-5 3.333h5M11 16H2.667A1.667 1.667 0 0 1 1 14.333V2.667A1.667 1.667 0 0 1 2.667 1h4.655c.22 0 .433.088.589.244l4.512 4.512a.834.834 0 0 1 .244.589v7.988A1.666 1.666 0 0 1 11 16Z">
-                                                                    </path>
-                                                                </svg></a></td>
+                                                        
                                                         <td><a href="/market/1">
-                                                                <div class="row-2"><svg
-                                                                        xmlns="http://www.w3.org/2000/svg"
-                                                                        viewBox="0 0 32 32" class="svg-37px">
-                                                                        <g fill="none" fill-rule="evenodd">
-                                                                            <circle cx="16" cy="16" r="16"
-                                                                                fill="#627EEA"></circle>
-                                                                            <g fill="#FFF" fill-rule="nonzero">
-                                                                                <path fill-opacity="0.602"
-                                                                                    d="M16.498 4v8.87l7.497 3.35z">
-                                                                                </path>
-                                                                                <path d="M16.498 4 9 16.22l7.498-3.35z">
-                                                                                </path>
-                                                                                <path fill-opacity="0.602"
-                                                                                    d="M16.498 21.968v6.027L24 17.616z">
-                                                                                </path>
-                                                                                <path
-                                                                                    d="M16.498 27.995v-6.028L9 17.616z">
-                                                                                </path>
-                                                                                <path fill-opacity="0.2"
-                                                                                    d="m16.498 20.573 7.497-4.353-7.497-3.348z">
-                                                                                </path>
-                                                                                <path fill-opacity="0.602"
-                                                                                    d="m9 16.22 7.498 4.353v-7.701z">
-                                                                                </path>
-                                                                            </g>
-                                                                        </g>
-                                                                    </svg>
+                                                                <div class="row-2">
                                                                     <div>
-                                                                        <h5>Ethereum</h5>
-                                                                        <h5 style="color: rgb(166, 178, 205);">ETH</h5>
+                                                                        <h5>VIETJET</h5>
+                                                                        <h5 style="color: rgb(166, 178, 205);">VJC</h5>
                                                                     </div>
                                                                 </div>
                                                             </a></td>
@@ -1604,27 +894,11 @@
                                                                     </path>
                                                                 </svg></div>
                                                         </td>
-                                                        <td><a href="/market/2"><svg xmlns="http://www.w3.org/2000/svg"
-                                                                    width="14" height="17" fill="none">
-                                                                    <path stroke="#2B7AFF" stroke-width="1.5"
-                                                                        d="M4.333 8.5h5m-5 3.333h5M11 16H2.667A1.667 1.667 0 0 1 1 14.333V2.667A1.667 1.667 0 0 1 2.667 1h4.655c.22 0 .433.088.589.244l4.512 4.512a.834.834 0 0 1 .244.589v7.988A1.666 1.666 0 0 1 11 16Z">
-                                                                    </path>
-                                                                </svg></a></td>
-                                                        <td><a href="/market/2">
-                                                                <div class="row-2"><svg
-                                                                        xmlns="http://www.w3.org/2000/svg"
-                                                                        viewBox="0 0 32 32" class="svg-37px">
-                                                                        <g fill="none" fill-rule="evenodd">
-                                                                            <circle cx="16" cy="16" r="16"
-                                                                                fill="#26A17B"></circle>
-                                                                            <path fill="#FFF"
-                                                                                d="M17.922 17.383v-.002c-.11.008-.677.042-1.942.042-1.01 0-1.721-.03-1.971-.042v.003c-3.888-.171-6.79-.848-6.79-1.658 0-.809 2.902-1.486 6.79-1.66v2.644c.254.018.982.061 1.988.061 1.207 0 1.812-.05 1.925-.06v-2.643c3.88.173 6.775.85 6.775 1.658 0 .81-2.895 1.485-6.775 1.657m0-3.59v-2.366h5.414V7.819H8.595v3.608h5.414v2.365c-4.4.202-7.709 1.074-7.709 2.118 0 1.044 3.309 1.915 7.709 2.118v7.582h3.913v-7.584c4.393-.202 7.694-1.073 7.694-2.116 0-1.043-3.301-1.914-7.694-2.117">
-                                                                            </path>
-                                                                        </g>
-                                                                    </svg>
+                                                        <td>
+                                                            <div class="row-1">
                                                                     <div>
-                                                                        <h5>Tether</h5>
-                                                                        <h5 style="color: rgb(166, 178, 205);">USDT</h5>
+                                                                        <h5>FPT</h5>
+                                                                        <h5 style="color: rgb(166, 178, 205);">FPT</h5>
                                                                     </div>
                                                                 </div>
                                                             </a></td>
@@ -1728,27 +1002,11 @@
                                                                     </path>
                                                                 </svg></div>
                                                         </td>
-                                                        <td><a href="/market/3"><svg xmlns="http://www.w3.org/2000/svg"
-                                                                    width="14" height="17" fill="none">
-                                                                    <path stroke="#2B7AFF" stroke-width="1.5"
-                                                                        d="M4.333 8.5h5m-5 3.333h5M11 16H2.667A1.667 1.667 0 0 1 1 14.333V2.667A1.667 1.667 0 0 1 2.667 1h4.655c.22 0 .433.088.589.244l4.512 4.512a.834.834 0 0 1 .244.589v7.988A1.666 1.666 0 0 1 11 16Z">
-                                                                    </path>
-                                                                </svg></a></td>
-                                                        <td><a href="/market/3">
-                                                                <div class="row-2"><svg
-                                                                        xmlns="http://www.w3.org/2000/svg"
-                                                                        viewBox="0 0 32 32" class="svg-37px">
-                                                                        <g fill="none">
-                                                                            <circle cx="16" cy="16" r="16"
-                                                                                fill="#F3BA2F"></circle>
-                                                                            <path fill="#FFF"
-                                                                                d="M12.116 14.404 16 10.52l3.886 3.886 2.26-2.26L16 6l-6.144 6.144zM6 16l2.26-2.26L10.52 16l-2.26 2.26zm6.116 1.596L16 21.48l3.886-3.886 2.26 2.259L16 26l-6.144-6.144-.003-.003zM21.48 16l2.26-2.26L26 16l-2.26 2.26zm-3.188-.002h.002V16L16 18.294l-2.291-2.29-.004-.004.004-.003.401-.402.195-.195L16 13.706l2.293 2.293z">
-                                                                            </path>
-                                                                        </g>
-                                                                    </svg>
+                                                        <td>
+                                                            <div class="row-1">
                                                                     <div>
-                                                                        <h5>BNB</h5>
-                                                                        <h5 style="color: rgb(166, 178, 205);">BNB</h5>
+                                                                        <h5>Techcombank</h5>
+                                                                        <h5 style="color: rgb(166, 178, 205);">TCB</h5>
                                                                     </div>
                                                                 </div>
                                                             </a></td>
@@ -1852,27 +1110,11 @@
                                                                     </path>
                                                                 </svg></div>
                                                         </td>
-                                                        <td><a href="/market/4"><svg xmlns="http://www.w3.org/2000/svg"
-                                                                    width="14" height="17" fill="none">
-                                                                    <path stroke="#2B7AFF" stroke-width="1.5"
-                                                                        d="M4.333 8.5h5m-5 3.333h5M11 16H2.667A1.667 1.667 0 0 1 1 14.333V2.667A1.667 1.667 0 0 1 2.667 1h4.655c.22 0 .433.088.589.244l4.512 4.512a.834.834 0 0 1 .244.589v7.988A1.666 1.666 0 0 1 11 16Z">
-                                                                    </path>
-                                                                </svg></a></td>
-                                                        <td><a href="/market/4">
-                                                                <div class="row-2"><svg
-                                                                        xmlns="http://www.w3.org/2000/svg"
-                                                                        viewBox="0 0 32 32" class="svg-37px">
-                                                                        <g fill="none">
-                                                                            <circle cx="16" cy="16" r="16"
-                                                                                fill="#23292F"></circle>
-                                                                            <path fill="#FFF"
-                                                                                d="M23.07 8h2.89l-6.015 5.957a5.621 5.621 0 0 1-7.89 0L6.035 8H8.93l4.57 4.523a3.556 3.556 0 0 0 4.996 0zM8.895 24.563H6l6.055-5.993a5.621 5.621 0 0 1 7.89 0L26 24.562h-2.895L18.5 20a3.556 3.556 0 0 0-4.996 0l-4.61 4.563z">
-                                                                            </path>
-                                                                        </g>
-                                                                    </svg>
+                                                        <td>
+                                                            <div class="row-1">
                                                                     <div>
-                                                                        <h5>XRP</h5>
-                                                                        <h5 style="color: rgb(166, 178, 205);">XRP</h5>
+                                                                        <h5>Vinhomes</h5>
+                                                                        <h5 style="color: rgb(166, 178, 205);">VHM</h5>
                                                                     </div>
                                                                 </div>
                                                             </a></td>
@@ -1976,27 +1218,11 @@
                                                                     </path>
                                                                 </svg></div>
                                                         </td>
-                                                        <td><a href="/market/5"><svg xmlns="http://www.w3.org/2000/svg"
-                                                                    width="14" height="17" fill="none">
-                                                                    <path stroke="#2B7AFF" stroke-width="1.5"
-                                                                        d="M4.333 8.5h5m-5 3.333h5M11 16H2.667A1.667 1.667 0 0 1 1 14.333V2.667A1.667 1.667 0 0 1 2.667 1h4.655c.22 0 .433.088.589.244l4.512 4.512a.834.834 0 0 1 .244.589v7.988A1.666 1.666 0 0 1 11 16Z">
-                                                                    </path>
-                                                                </svg></a></td>
                                                         <td><a href="/market/5">
-                                                                <div class="row-2"><svg
-                                                                        xmlns="http://www.w3.org/2000/svg"
-                                                                        viewBox="0 0 32 32" class="svg-37px">
-                                                                        <g fill="none" fill-rule="evenodd">
-                                                                            <circle cx="16" cy="16" r="16"
-                                                                                fill="#6cde07"></circle>
-                                                                            <path fill="#fff"
-                                                                                d="M22.5 19.154c0 2.57-2.086 4.276-5.166 4.533V26h-2.11v-2.336A11.495 11.495 0 0 1 9.5 21.35l1.552-2.126c1.383 1.075 2.692 1.776 4.269 2.01v-4.58c-3.541-.888-5.19-2.173-5.19-4.813 0-2.523 2.061-4.252 5.093-4.486V6h2.11v1.402a9.49 9.49 0 0 1 4.56 1.776l-1.359 2.196c-1.067-.771-2.158-1.262-3.298-1.495v4.439c3.687.888 5.263 2.313 5.263 4.836zm-7.18-5.327V9.715c-1.527.117-2.327.935-2.327 1.963 0 .98.46 1.612 2.328 2.15zm4.318 5.49c0-1.05-.51-1.681-2.401-2.219v4.23c1.528-.118 2.401-.889 2.401-2.01z">
-                                                                            </path>
-                                                                        </g>
-                                                                    </svg>
+                                                                <div class="row-2">
                                                                     <div>
-                                                                        <h5>USD Coin</h5>
-                                                                        <h5 style="color: rgb(166, 178, 205);">USDC</h5>
+                                                                        <h5>VINGROUP</h5>
+                                                                        <h5 style="color: rgb(166, 178, 205);">VIC</h5>
                                                                     </div>
                                                                 </div>
                                                             </a></td>
@@ -2100,85 +1326,11 @@
                                                                     </path>
                                                                 </svg></div>
                                                         </td>
-                                                        <td><a href="/market/6"><svg xmlns="http://www.w3.org/2000/svg"
-                                                                    width="14" height="17" fill="none">
-                                                                    <path stroke="#2B7AFF" stroke-width="1.5"
-                                                                        d="M4.333 8.5h5m-5 3.333h5M11 16H2.667A1.667 1.667 0 0 1 1 14.333V2.667A1.667 1.667 0 0 1 2.667 1h4.655c.22 0 .433.088.589.244l4.512 4.512a.834.834 0 0 1 .244.589v7.988A1.666 1.666 0 0 1 11 16Z">
-                                                                    </path>
-                                                                </svg></a></td>
                                                         <td><a href="/market/6">
-                                                                <div class="row-2"><svg
-                                                                        xmlns="http://www.w3.org/2000/svg"
-                                                                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                                        viewBox="0 0 32 32" class="svg-37px">
-                                                                        <defs>
-                                                                            <filter id="ada_svg__a" width="111.7%"
-                                                                                height="111.7%" x="-5.8%" y="-4.2%"
-                                                                                filterUnits="objectBoundingBox">
-                                                                                <feOffset dy="0.5" in="SourceAlpha"
-                                                                                    result="shadowOffsetOuter1">
-                                                                                </feOffset>
-                                                                                <feGaussianBlur in="shadowOffsetOuter1"
-                                                                                    result="shadowBlurOuter1"
-                                                                                    stdDeviation="0.5"></feGaussianBlur>
-                                                                                <feComposite in="shadowBlurOuter1"
-                                                                                    in2="SourceAlpha" operator="out"
-                                                                                    result="shadowBlurOuter1">
-                                                                                </feComposite>
-                                                                                <feColorMatrix in="shadowBlurOuter1"
-                                                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.199473505 0">
-                                                                                </feColorMatrix>
-                                                                            </filter>
-                                                                            <filter id="ada_svg__d" width="115.5%"
-                                                                                height="117.2%" x="-7.5%" y="-6%"
-                                                                                filterUnits="objectBoundingBox">
-                                                                                <feOffset dy="0.5" in="SourceAlpha"
-                                                                                    result="shadowOffsetOuter1">
-                                                                                </feOffset>
-                                                                                <feGaussianBlur in="shadowOffsetOuter1"
-                                                                                    result="shadowBlurOuter1"
-                                                                                    stdDeviation="0.5"></feGaussianBlur>
-                                                                                <feColorMatrix in="shadowBlurOuter1"
-                                                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.204257246 0">
-                                                                                </feColorMatrix>
-                                                                            </filter>
-                                                                            <linearGradient id="ada_svg__c" x1="50%"
-                                                                                x2="50%" y1="0%" y2="100%">
-                                                                                <stop offset="0%" stop-color="#FFF"
-                                                                                    stop-opacity="0.5"></stop>
-                                                                                <stop offset="100%" stop-opacity="0.5">
-                                                                                </stop>
-                                                                            </linearGradient>
-                                                                            <circle id="ada_svg__b" cx="15" cy="15"
-                                                                                r="15"></circle>
-                                                                            <path id="ada_svg__e"
-                                                                                d="M15.725 5.06c.479-.247 1.064.324.81.795-.149.384-.71.486-.996.193-.303-.28-.204-.836.186-.989zm-5.155.546c.291-.118.66.144.63.457.03.338-.39.588-.687.427-.393-.15-.348-.778.057-.884zm10.558.893c-.455-.054-.527-.758-.09-.9.34-.162.652.143.702.46-.072.27-.302.518-.612.44zm-9.385 1.265c.487-.303 1.181.148 1.106.705-.025.561-.783.887-1.211.507-.414-.298-.351-.982.105-1.212m7.43.322c.217-.55 1.097-.568 1.344-.032.245.417-.056.934-.491 1.076-.577.106-1.124-.508-.853-1.044m-4.069 1.013c-.005-.474.433-.826.89-.859.304.06.634.187.764.488.243.416.027.987-.41 1.178-.2.11-.438.069-.656.056-.333-.16-.614-.477-.588-.863m-7.666.69c.445-.27 1.045.22.876.696-.092.411-.654.578-.975.316-.343-.246-.289-.837.1-1.013zM23.9 9.786c.377-.288 1 .043.954.511.026.427-.513.75-.887.53-.412-.183-.455-.807-.067-1.04zm-6.64.851c.622-.22 1.362.043 1.716.59.468.667.22 1.683-.507 2.066-.752.453-1.851.07-2.13-.758-.315-.74.145-1.666.92-1.898zm-3.653.073c.69-.32 1.619-.052 1.952.642.392.676.089 1.617-.612 1.966-.702.393-1.693.095-2.032-.63-.381-.702-.043-1.655.692-1.978zM9.95 11.94c.053-.437.472-.722.895-.752a.98.98 0 0 1 .87.857c-.03.45-.383.888-.867.886-.533.045-1-.477-.898-.991zm10.802-.656c.547-.313 1.306.142 1.282.76.037.655-.803 1.116-1.347.732-.566-.32-.522-1.22.065-1.492m-8.63 2.307c.638-.173 1.37.123 1.683.701.343.582.203 1.39-.33 1.818-.685.626-1.946.374-2.31-.48-.419-.783.09-1.833.956-2.04zm6.927-.003c.621-.175 1.351.06 1.685.617.442.637.231 1.588-.426 1.998-.69.477-1.756.227-2.136-.519-.46-.771.003-1.861.877-2.096m-11.04.726c.552-.205 1.164.394.94.933-.136.49-.839.672-1.202.31-.425-.34-.268-1.095.262-1.243m14.969.782a.836.836 0 0 1 .788-.874c.378.06.746.36.716.765.035.535-.62.898-1.084.647-.217-.109-.328-.328-.42-.538M5.294 14.58c.332-.143.743.14.667.503-.018.411-.635.57-.861.226-.2-.239-.08-.606.194-.73zm20.949-.009c.234-.163.61-.046.702.223.157.294-.131.696-.467.647-.472.042-.624-.665-.235-.87zm-12.317 1.973c.874-.223 1.814.494 1.82 1.38.056.895-.87 1.688-1.764 1.482-.692-.11-1.235-.766-1.212-1.453-.002-.658.502-1.27 1.156-1.409zm3.462-.001c.887-.244 1.855.486 1.841 1.392.047.878-.85 1.645-1.726 1.47-.825-.104-1.433-.995-1.203-1.783.116-.524.562-.95 1.088-1.08zm-6.676.545c.614-.103 1.19.57.941 1.144-.182.612-1.086.777-1.486.278-.468-.48-.118-1.356.545-1.422zm10.154.027c.548-.226 1.22.24 1.178.825.022.643-.808 1.087-1.343.711-.607-.337-.496-1.33.165-1.536zm2.838 2.8c-.214-.393.175-.914.62-.841.22-.004.375.167.516.311.029.233.078.511-.119.69-.267.333-.872.238-1.017-.16zm-16.268-.732c.415-.271 1.012.134.918.61-.05.423-.59.664-.945.424-.382-.217-.368-.836.027-1.034zm8.193.883c.543-.235 1.235.23 1.183.818.04.65-.815 1.1-1.346.71-.59-.335-.491-1.321.163-1.528zm-3.794.871c.462-.239 1.082.174 1.04.684.014.418-.4.774-.82.712-.347-.007-.573-.314-.685-.605.006-.317.139-.67.465-.79zm7.686.008c.476-.29 1.152.126 1.107.67.012.57-.752.934-1.195.56-.428-.293-.376-.997.088-1.23m1.337 3.25c-.212-.314.037-.693.38-.765.277.055.57.26.511.574-.04.427-.674.557-.891.192zm-10.611-.273c.084-.25.288-.497.587-.432.435.03.564.676.183.875-.342.227-.74-.084-.77-.443m5.12.287c.083-.37.568-.549.888-.353.212.09.274.322.328.52a8.822 8.822 0 0 0-.08.31c-.131.152-.3.305-.518.3-.405.047-.771-.404-.619-.777z">
-                                                                            </path>
-                                                                        </defs>
-                                                                        <g fill="none">
-                                                                            <g transform="translate(1)">
-                                                                                <use xlink:href="#ada_svg__b"
-                                                                                    fill="#000"
-                                                                                    filter="url(#ada_svg__a)"></use>
-                                                                                <use xlink:href="#ada_svg__b"
-                                                                                    fill="#0D1E30"></use>
-                                                                                <use xlink:href="#ada_svg__b"
-                                                                                    fill="url(#ada_svg__c)"
-                                                                                    style="mix-blend-mode: soft-light;">
-                                                                                </use>
-                                                                                <circle cx="15" cy="15" r="14.5"
-                                                                                    stroke="#000"
-                                                                                    stroke-opacity="0.097"></circle>
-                                                                            </g>
-                                                                            <use xlink:href="#ada_svg__e" fill="#000"
-                                                                                filter="url(#ada_svg__d)"></use>
-                                                                            <use xlink:href="#ada_svg__e" fill="#FFF">
-                                                                            </use>
-                                                                        </g>
-                                                                    </svg>
+                                                                <div class="row-2">
                                                                     <div>
-                                                                        <h5>Cardano</h5>
-                                                                        <h5 style="color: rgb(166, 178, 205);">ADA</h5>
+                                                                        <h5>Bảo Việt</h5>
+                                                                        <h5 style="color: rgb(166, 178, 205);">BVH</h5>
                                                                     </div>
                                                                 </div>
                                                             </a></td>
@@ -2282,27 +1434,10 @@
                                                                     </path>
                                                                 </svg></div>
                                                         </td>
-                                                        <td><a href="/market/7"><svg xmlns="http://www.w3.org/2000/svg"
-                                                                    width="14" height="17" fill="none">
-                                                                    <path stroke="#2B7AFF" stroke-width="1.5"
-                                                                        d="M4.333 8.5h5m-5 3.333h5M11 16H2.667A1.667 1.667 0 0 1 1 14.333V2.667A1.667 1.667 0 0 1 2.667 1h4.655c.22 0 .433.088.589.244l4.512 4.512a.834.834 0 0 1 .244.589v7.988A1.666 1.666 0 0 1 11 16Z">
-                                                                    </path>
-                                                                </svg></a></td>
                                                         <td><a href="/market/7">
-                                                                <div class="row-2"><svg
-                                                                        xmlns="http://www.w3.org/2000/svg"
-                                                                        viewBox="0 0 32 32" class="svg-37px">
-                                                                        <g fill="none">
-                                                                            <circle cx="16" cy="16" r="16"
-                                                                                fill="#E756CC"></circle>
-                                                                            <path fill="#FFF"
-                                                                                d="M12.77 16.533c.095.225.19.448.29.67.091.211.188.42.281.63l.214.488c.074.167.152.334.228.5l.187.42.286.644c.168.37.33.742.495 1.113.2.439.386.883.59 1.32.248.499.428 1.021.653 1.528.225-.61.471-1.2.743-1.791.169-.372.33-.747.5-1.12.133-.294.259-.593.39-.89.13-.292.265-.583.39-.876l.13-.281c.073-.164.145-.328.219-.491.074-.167.146-.335.221-.501.115-.253.227-.508.34-.763a14.4 14.4 0 0 0 .258-.599c-2.138-.003-4.277-.003-6.415 0zm7.718-2.84H11.5l.938 2.253h7.017l1.032-2.254zm6.642-2.105c.22.533.394 1.083.532 1.642a10.487 10.487 0 0 0-1.867-.139c-.477-.008-.962.045-1.436 0l-.04-.163c.16-.217.367-.382.594-.526.666-.42 1.432-.724 2.217-.814m-15.216-6.5c1.352.433 2.778.67 4.114 1.146.19.09.41.105.418.358-1.113.177-2.197.182-3.318.268-1.199.08-2.364.198-3.567.038-.375-.03-.755-.122-1.13-.11a12.496 12.496 0 0 1 3.001-1.778c.176-.035.317.031.482.078zm9.13 12.104c-.083.187-.168.372-.253.557-.094.208-.19.418-.286.625-.09.197-.176.395-.266.591-.154.332-.308.664-.457.999-.157.341-.31.684-.47 1.024l-.575 1.258c-.144.308-.282.618-.423.927-.233.523-.477 1.041-.715 1.562-.222.513-.462 1.018-.692 1.526-.264.58-.528 1.161-.798 1.739-.106 0-.212 0-.318-.002-.298-.663-.606-1.322-.901-1.986-.21-.472-.43-.939-.64-1.41-.191-.43-.39-.856-.582-1.286l-.465-1.024c-.21-.482-.437-.957-.651-1.438-.19-.424-.385-.846-.573-1.271-.075-.165-.149-.33-.225-.494-.131-.3-.27-.593-.405-.891-.096-.214-.196-.426-.292-.641l-.216-.48c-.08-.183-.163-.364-.25-.544-2.197-.005-4.394.005-6.591-.004v-.61c2.102-.004 4.203.005 6.304-.004a9.544 9.544 0 0 0-.22-.527c-.125-.264-.24-.53-.361-.795-.107-.234-.21-.47-.32-.703-.15-.322-.291-.649-.442-.972-.18-.388-.346-.784-.533-1.169-1 .162-1.934.54-2.73 1.165l-.017.012c-.343.247-.648.57-.942.876a6.717 6.717 0 0 0-.648.819 11.784 11.784 0 0 1 1.948-5.219c.454.395 1.007.65 1.62.618-.259-.574-.534-1.141-.775-1.722.467-.55.991-1.049 1.547-1.51.405.977.854 1.937 1.277 2.906.055.152.192.136.324.185.343.079.584.28.894.432.353.181.767.273 1.157.343.164.033.33.052.497.07l.043.1c-.748.203-1.494.215-2.261.251.064.259.174.497.286.738 3.548.007 7.096-.004 10.644.005.234-.465.43-.948.655-1.417-.655.227-1.308.441-1.994.557-.113.014-.232.014-.346.014.161-.1.328-.187.499-.27.747-.353 1.476-.76 2.153-1.232.196-.133.242-.326.338-.528.324-.718.641-1.44.967-2.156.941.767 1.77 1.667 2.44 2.677-.44-.182-.872-.223-1.345-.181l-.792 1.733c-.155.347-.319.69-.474 1.037l-.492 1.077c-.117.262-.245.52-.353.785-.134.253-.24.52-.364.779-.12.259-.23.521-.353.78-.072.145-.14.293-.207.441 2.125.01 4.25.001 6.375.005.003.205-.001.409-.008.612-2.21.004-4.421-.002-6.631.004-.116.213-.216.437-.317.657z">
-                                                                            </path>
-                                                                        </g>
-                                                                    </svg>
                                                                     <div>
-                                                                        <h5>Arbitrum</h5>
-                                                                        <h5 style="color: rgb(166, 178, 205);">ARB</h5>
+                                                                        <h5>Á Châu</h5>
+                                                                        <h5 style="color: rgb(166, 178, 205);">ACB</h5>
                                                                     </div>
                                                                 </div>
                                                             </a></td>
@@ -2406,27 +1541,10 @@
                                                                     </path>
                                                                 </svg></div>
                                                         </td>
-                                                        <td><a href="/market/8"><svg xmlns="http://www.w3.org/2000/svg"
-                                                                    width="14" height="17" fill="none">
-                                                                    <path stroke="#2B7AFF" stroke-width="1.5"
-                                                                        d="M4.333 8.5h5m-5 3.333h5M11 16H2.667A1.667 1.667 0 0 1 1 14.333V2.667A1.667 1.667 0 0 1 2.667 1h4.655c.22 0 .433.088.589.244l4.512 4.512a.834.834 0 0 1 .244.589v7.988A1.666 1.666 0 0 1 11 16Z">
-                                                                    </path>
-                                                                </svg></a></td>
                                                         <td><a href="/market/8">
-                                                                <div class="row-2"><svg
-                                                                        xmlns="http://www.w3.org/2000/svg"
-                                                                        viewBox="0 0 32 32" class="svg-37px">
-                                                                        <g fill="none">
-                                                                            <circle cx="16" cy="16" r="16" fill="#000">
-                                                                            </circle>
-                                                                            <path fill="#FFF"
-                                                                                d="M27.986 14.669v.064c-1.387.868-2.784 1.726-4.177 2.592a.18.18 0 0 0-.06.075c.372.1.757.175 1.11.337.326.145.66.334.844.651.176.322.22.7.122 1.053-.053.264-.164.512-.264.763-.418 1.002-.838 2.001-1.253 3.007a.585.585 0 0 1-.08.139c-.137-.003-.268-.053-.402-.084-.676-.167-1.356-.331-2.032-.5-.22-.062-.446-.098-.663-.17.006-.137.084-.254.13-.377l.928-2.221c.07-.154.111-.346.011-.496-.125-.214-.376-.295-.598-.356-.816-.21-1.638-.404-2.456-.607-.117-.025-.231-.078-.354-.062-.072.126-.114.268-.172.404-.348.816-.682 1.637-1.028 2.453-.05.114-.08.24-.156.34-.136 0-.264-.053-.395-.084-.699-.172-1.398-.348-2.1-.518-.197-.053-.403-.086-.598-.153a.469.469 0 0 1 .036-.161l3.533-8.47a.181.181 0 0 1 .056-.072c.123.008.24.058.36.086.595.142 1.191.295 1.787.44.309.08.626.142.933.234.016.058-.012.117-.034.172-.24.546-.46 1.1-.693 1.646l-.721 1.732c-.081.203-.187.398-.243.612.104-.036.193-.097.284-.159l4.706-2.95c.086-.054.164-.126.262-.151.144-.011.28.044.417.075.48.103.952.24 1.428.35.516.115 1.022.257 1.532.366zM16.882 12.97c.025.504-.167.983-.364 1.434-.532 1.278-1.07 2.553-1.599 3.831-.192.451-.359.922-.654 1.32-.21.296-.502.524-.84.654a2.884 2.884 0 0 1-1.318.095c-.76-.095-1.5-.3-2.244-.479-1.01-.253-2.027-.498-3.037-.752-.671-.161-1.348-.334-1.972-.64a1.654 1.654 0 0 1-.662-.582 1.114 1.114 0 0 1-.159-.69c.053-.443.217-.864.395-1.27l1.63-3.915c.13-.3.244-.61.411-.893a2.43 2.43 0 0 1 .56-.688c.268-.204.583-.335.916-.382.245-.022.49-.01.735-.005a19.32 19.32 0 0 1 2.247.47c1.036.25 2.069.513 3.104.763.476.117.95.237 1.415.396.311.114.629.23.902.428.31.201.508.536.534.905zm-3.62.891c.02-.147-.085-.273-.208-.337-.25-.136-.535-.186-.807-.256-.722-.18-1.444-.358-2.17-.534a1.442 1.442 0 0 0-.634-.04c-.245.07-.368.318-.451.535-.41.975-.81 1.952-1.222 2.924-.045.114-.09.228-.1.35 0 .14.097.262.216.32.179.092.374.143.563.193l2.255.554c.262.061.537.128.805.07.225-.073.34-.304.423-.507l1.105-2.651c.087-.2.198-.398.226-.62z">
-                                                                            </path>
-                                                                        </g>
-                                                                    </svg>
                                                                     <div>
-                                                                        <h5>OKB</h5>
-                                                                        <h5 style="color: rgb(166, 178, 205);">OKB</h5>
+                                                                        <h5>SSI</h5>
+                                                                        <h5 style="color: rgb(166, 178, 205);">SSI</h5>
                                                                     </div>
                                                                 </div>
                                                             </a></td>
@@ -2530,28 +1648,11 @@
                                                                     </path>
                                                                 </svg></div>
                                                         </td>
-                                                        <td><a href="/market/9"><svg xmlns="http://www.w3.org/2000/svg"
-                                                                    width="14" height="17" fill="none">
-                                                                    <path stroke="#2B7AFF" stroke-width="1.5"
-                                                                        d="M4.333 8.5h5m-5 3.333h5M11 16H2.667A1.667 1.667 0 0 1 1 14.333V2.667A1.667 1.667 0 0 1 2.667 1h4.655c.22 0 .433.088.589.244l4.512 4.512a.834.834 0 0 1 .244.589v7.988A1.666 1.666 0 0 1 11 16Z">
-                                                                    </path>
-                                                                </svg></a></td>
                                                         <td><a href="/market/9">
-                                                                <div class="row-2"><svg
-                                                                        xmlns="http://www.w3.org/2000/svg"
-                                                                        viewBox="0 0 32 32" class="svg-37px">
-                                                                        <g fill="none" fill-rule="evenodd">
-                                                                            <circle cx="16" cy="16" r="16"
-                                                                                fill="#E84142" fill-rule="nonzero">
-                                                                            </circle>
-                                                                            <path fill="#FFF"
-                                                                                d="M11.518 22.75H8.49c-.636 0-.95 0-1.142-.123A.77.77 0 0 1 7 22.025c-.012-.226.145-.503.46-1.055l7.472-13.193c.318-.56.48-.84.682-.944a.77.77 0 0 1 .698 0c.203.104.364.384.682.944l1.536 2.686.008.014c.343.6.517.906.593 1.226a2.26 2.26 0 0 1 0 1.066c-.076.323-.249.63-.597 1.24l-3.926 6.95-.01.017c-.346.606-.52.913-.764 1.145a2.284 2.284 0 0 1-.93.54c-.319.089-.675.089-1.387.089zm7.643 0h4.336c.64 0 .962 0 1.154-.126a.768.768 0 0 0 .348-.607c.011-.219-.142-.484-.443-1.005l-.032-.054-2.172-3.722-.025-.042c-.305-.517-.46-.778-.657-.879a.762.762 0 0 0-.693 0c-.2.104-.36.377-.678.925l-2.165 3.722-.007.013c-.317.548-.476.821-.464 1.046a.777.777 0 0 0 .348.606c.188.123.51.123 1.15.123z">
-                                                                            </path>
-                                                                        </g>
-                                                                    </svg>
+                                                                <div class="row-2">
                                                                     <div>
-                                                                        <h5>Avalanche</h5>
-                                                                        <h5 style="color: rgb(166, 178, 205);">AVAX</h5>
+                                                                        <h5>Xăng dầu VN</h5>
+                                                                        <h5 style="color: rgb(166, 178, 205);">PLX</h5>
                                                                     </div>
                                                                 </div>
                                                             </a></td>
