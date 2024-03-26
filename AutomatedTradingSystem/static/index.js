@@ -10931,7 +10931,7 @@ const IT = e=>M.createElement("svg", rp({
                     alt: "Logo"
                 })
             }), y.jsx("h2", {
-                children: "IUH TRAING"
+                children: "IUH"
             })]
         }), y.jsxs("div", {
             className: "sidebar__card",
@@ -24078,9 +24078,9 @@ const $N = Ce.forwardRef((e,t)=>{
     },
     children: [y.jsxs("div", {
         children: [y.jsx("h3", {
-            children: "Sing Up to IUH TRAING Tiers and enjoy all the perks"
+            children: "Sing Up to IUH Tiers and enjoy all the perks"
         }), y.jsx("p", {
-            children: "Unlock exclusive access to premium content, personalized insights, and unique perks by subscribing to IUH TRAING tiers now !"
+            children: "Unlock exclusive access to premium content, personalized insights, and unique perks by subscribing to IUH tiers now !"
         })]
     }), y.jsxs("button", {
         children: ["Sing Up Now ", y.jsx("img", {
@@ -58456,7 +58456,7 @@ const o$ = "0tZFQs7qBfQ"
             videoId: o$
         })
     }), y.jsx("p", {
-        children: "This strategy is based on the popular Bollinger Bands indicator. It buys when the current price is below the lower band and sells when either the profit target or stop-loss level has been reached or when the current price is above the upper band. Trade smarter with IUH TRAING"
+        children: "This strategy is based on the popular Bollinger Bands indicator. It buys when the current price is below the lower band and sells when either the profit target or stop-loss level has been reached or when the current price is above the upper band. Trade smarter with IUH"
     }), y.jsx("a", {
         href: "http://www.extej.com/",
         children: "More info"
