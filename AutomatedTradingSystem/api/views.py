@@ -33,21 +33,46 @@ from django.contrib.auth import authenticate, login
 from django.http import JsonResponse
 from django.shortcuts import redirect, render
 
+# @csrf_exempt
+# def login_view(request):
+#     if request.method == 'POST':
+#         # Get the username and password from the request
+#         username = request.POST.get('username')
+#         password = request.POST.get('password')
+#         user = authenticate(request, username=username, password=password)
+#         if user is not None:
+#             login(request, user)
+#             return redirect('market')  # Redirect to the market page
+#         else:
+#             return JsonResponse({"message": "Invalid username or password"}, status=400)
+#     else:
+#         # If the request method is not POST, render the login form
+#         return render(request, 'login.html')
+
 @csrf_exempt
 def login_view(request):
     if request.method == 'POST':
-        # Get the username and password from the request
-        username = request.POST.get('username')
-        password = request.POST.get('password')
+        # Check if the content type is JSON
+        if request.content_type == 'application/json':
+            # Load JSON data from the request body
+            data = json.loads(request.body)
+            username = data.get('username')
+            password = data.get('password')
+        else:
+            # If content type is not JSON, assume form data
+            username = request.POST.get('username')
+            password = request.POST.get('password')
+
         user = authenticate(request, username=username, password=password)
         if user is not None:
             login(request, user)
-            return redirect('market')  # Redirect to the market page
+            return redirect('market')
         else:
             return JsonResponse({"message": "Invalid username or password"}, status=400)
     else:
         # If the request method is not POST, render the login form
         return render(request, 'login.html')
+
 
 
 def register_view(request):
