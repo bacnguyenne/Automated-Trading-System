@@ -89,3 +89,6 @@ def market(request):
 
 def wallet(request):
     return render(request, 'wallet.html')
+
+def trading(request):
+    return render(request, 'trading.html')
