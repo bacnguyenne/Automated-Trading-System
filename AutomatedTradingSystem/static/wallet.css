@@ -1,5 +1,3 @@
-@import-normalize;
-
 .sidebar {
     overflow: auto;
     position: fixed;
@@ -1628,7 +1626,6 @@ header .burger-menu__svg {
     border: 39px solid transparent;
     border-bottom: none;
     background: linear-gradient(270deg, #9bff36 0%, #ffc736 51.56%, #ff36af 100%) border-box;
-    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: destination-out;
     mask-composite: exclude
 }
