@@ -61,6 +61,7 @@ requests==2.31.0
 service-identity==24.1.0
 simplejson==3.19.2
 six==1.16.0
+ssi_fc_data==2.2.1
 stack-data==0.6.3
 tornado==6.4
 traitlets==5.14.2
