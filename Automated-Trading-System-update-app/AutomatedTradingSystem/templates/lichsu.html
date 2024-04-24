@@ -27,84 +27,106 @@
   <style class="darkreader darkreader--invert" media="screen"></style>
 </head>
 <style>
-  body, html { 
-    font-family: 'Lato', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-    color: #333;
-  }
-
-  .header {
-    /* background-color: #ffffff; */
-    padding: 16px 24px;
-    text-align: center;
-    /* box-shadow: 0 2px 4px rgba(0,0,0,0.1); */
+  body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .header {
+            background-color: #4CAF50;
+            padding: 16px;
+            text-align: center;
+        }
+        .header button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-right: 10px;
+            transition: background-color 0.2s;
+        }
+        .header button:hover {
+            background-color: #369456;
+        }
+        .main {
+            padding: 20px;
+        }
+        .section {
+            display: none;
+        }
+        .section.active {
+            display: block;
+        }
+        #transactionHistory {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        #transactionHistory th,
+        #transactionHistory td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        #transactionHistory tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        #transactionHistory th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #4CAF50;
+            color: white;
+        }
+        /* CSS cho trang lịch sử */
+#transactionHistory {
     width: 100%;
-    box-sizing: border-box;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-  }
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+}
 
-  .header button {
+#transactionHistory th,
+#transactionHistory td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#transactionHistory tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#transactionHistory th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Chỉnh CSS cho nút Open full history */
+#transactionHistory a {
+    display: inline-block;
     background-color: #4CAF50;
     color: white;
     padding: 10px 20px;
     cursor: pointer;
+    border: none;
     border-radius: 5px;
     font-size: 16px;
+    margin-top: 20px;
+    text-decoration: none;
     transition: background-color 0.2s;
-    margin-right: 10px;
-  }
+}
 
-  .header button:hover {
+#transactionHistory a:hover {
     background-color: #369456;
-  }
-
-  .main {
-    padding: 20px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    margin-top: 120px;
-    margin-right: 20px;
-    margin-left: 390px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  table {
-    width: 1100px; /* Điều chỉnh chiều rộng của bảng */
-    margin: auto; /* Canh giữa bảng */
-    border-collapse: collapse;
-    font-size: 16px;
-    border: 2px solid #ddd;
-    border-radius: 10px;
-    overflow: hidden;
-    margin-top: 20px; /* Khoảng cách phía trên bảng */
-    margin-bottom: 20px; /* Khoảng cách phía dưới bảng */
 }
 
-th, td {
-    padding: 16px;
-    text-align: left;
-    border: 1px solid #ddd;
-    height: 115px;
-}
-
-th {
-    background-color: #4CAF50;
-    color: white;
-}
-
-
-  tr:nth-child(even) {
-    background-color: #f9f9f9;
-  }
-</style>
+    </style>
 
 
 
@@ -197,7 +219,7 @@ th {
        <div class="header">
         <button onclick="showSection('dashboard')">Bảng Điều Khiển</button>
         <button onclick="window.location.href='giaodich.html'">Sổ Lệnh</button>
-        <button onclick="window.location.href='/lichsu/'">Lịch Sử Giao Dịch</button>
+        <button onclick="showSection('history')">Lịch Sử Giao Dịch</button>
     </div>
     <div class="main">
         <div id="dashboard" class="section active">
@@ -216,8 +238,27 @@ th {
                 </tbody>
             </table>
         </div>
-        
-        
+        <div id="orderbook" class="section">
+            <a href="giaodich.html">Open Full Orderbook</a>
+        </div>
+        <div id="history" class="section">
+            <h2>Lịch Sử Giao Dịch</h2>
+            <table id="transactionHistory">
+                <thead>
+                    <tr>
+                        <th>Ngày</th>
+                        <th>Mã Cổ Phiếu</th>
+                        <th>Loại Giao Dịch</th>
+                        <th>Số Lượng</th>
+                        <th>Giá</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Transaction data will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
     <script>
         function showSection(sectionId) {
             document.querySelectorAll('.section').forEach(sec => {
@@ -232,6 +273,12 @@ th {
             { name: 'AMZN', shares: 20, price: 3100.00 }
         ];
 
+        const transactionData = [
+            { date: '2024-01-01', code: 'AAPL', type: 'Buy', quantity: 10, price: 150 },
+            { date: '2024-01-02', code: 'GOOGL', type: 'Sell', quantity: 5, price: 2800 },
+            { date: '2024-01-03', code: 'AMZN', type: 'Buy', quantity: 8, price: 3100 }
+        ];
+
         function updatePortfolio() {
             const table = document.getElementById('portfolioTable');
             portfolioData.forEach(stock => {
@@ -243,15 +290,20 @@ th {
             });
         }
 
-        window.onload = updatePortfolio;
+        function updateTransactionHistory() {
+            const tbody = document.querySelector('#transactionHistory tbody');
+            transactionData.forEach(tx => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `<td>${tx.date}</td><td>${tx.code}</td><td>${tx.type}</td><td>${tx.quantity}</td><td>${tx.price.toFixed(2)}$</td>`;
+                tbody.appendChild(tr);
+            });
+        }
+
+        window.onload = function() {
+            updatePortfolio();
+            updateTransactionHistory(); // Update transaction history on page load
+        };
     </script>
-
-
-
-
-     </div>
-     <div class=""></div>
-   </div>
  
  </body>
  

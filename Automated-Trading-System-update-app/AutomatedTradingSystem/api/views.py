@@ -120,3 +120,6 @@ def trading(request):
 
 def watchlist(request):
     return render(request, 'watchlist.html')
+
+def lichsu(request):
+    return render(request, 'lichsu.html')
