@@ -1,0 +1,16 @@
+POST http://127.0.0.1:8000/login/
+Content-Type: application/json
+
+{
+    "username": "111",
+    "password": "111"
+}
+### 
+POST http://127.0.0.1:8000/login/
+Content-Type: application/json
+
+{
+    "username": "1111",
+    "password": "111"
+}
+
