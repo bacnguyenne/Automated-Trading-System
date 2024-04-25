@@ -117,3 +117,9 @@ def wallet(request):
 
 def trading(request):
     return render(request, 'trading.html')
+
+def watchlist(request):
+    return render(request, 'watchlist.html')
+
+def lichsu(request):
+    return render(request, 'lichsu.html')

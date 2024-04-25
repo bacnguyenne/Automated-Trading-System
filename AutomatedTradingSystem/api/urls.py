@@ -9,4 +9,6 @@ urlpatterns = [
     path('market/', views.market, name='market'),
     path('wallet/', views.wallet, name='wallet'),
     path('trading/', views.trading, name='trading'),
+    path('watchlist/', views.watchlist, name='watchlist'),
+    path('lichsu/', views.lichsu, name='lichsu'),
 ]
