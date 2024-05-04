@@ -77,8 +77,12 @@ WSGI_APPLICATION = 'AutomatedTradingSystem.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgres',
+        'USER': 'dbmasteruser',
+        'PASSWORD': 'ZinNopassword',
+        'HOST': 'ls-65cbc248f7f6256b66e5d044234532bebe12d75b.cza8koy0izk1.ap-southeast-1.rds.amazonaws.com',
+        'PORT': '5432', 
     }
 }
 
