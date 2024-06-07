@@ -10,7 +10,7 @@ from matplotlib.pylab import rcParams
 import warnings
 warnings.filterwarnings('ignore')
 
-data = pd.read_csv('FPT.csv')
+
 
 def preprocess_data(data, symbol):
     df = data[data['symbol'] == symbol]
@@ -82,7 +82,7 @@ def calculate_percentage_change(predictions, current_price):
     percentage_changes = [(pred[0] - current_price) / current_price * 100 for pred in predictions]
     return percentage_changes
 
-symbols = data['symbol'].unique()
+# symbols = data['symbol'].unique()
 
 def main():
     for symbol in symbols:
