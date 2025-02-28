@@ -39,9 +39,9 @@ def insert_data(**kwargs):
 
     conn = psycopg2.connect(
         database="postgres",
-        user='dbmasteruser',
-        password='ZinNopassword',
-        host='ls-65cbc248f7f6256b66e5d044234532bebe12d75b.cza8koy0izk1.ap-southeast-1.rds.amazonaws.com',
+        user=,
+        password=,
+        host=,
         port='5432'
     )
 
@@ -59,7 +59,7 @@ def insert_data(**kwargs):
     
   
 default_args = {
-    'owner': 'TaiDuongRepo',
+    'owner': 'ATS_airflow',
     'depends_on_past': False,
     'start_date': datetime(2023, 5, 13),
     'retries': 1,

@@ -2,18 +2,16 @@
 import json
 from ssi_fc_data.fc_md_stream import MarketDataStream
 from ssi_fc_data.fc_md_client import MarketDataClient
-
 import time
 from threading import Thread, Event
+import config
 
 class Config():
-    auth_type = 'Bearer'
-
-    consumerID = 'a14ee41b0b6d4eb8990d8a17215151d4'
-    consumerSecret = '590b66ec64e947ea92afb799de009efb'
-
-    url = 'https://fc-data.ssi.com.vn/'  
-    stream_url = 'https://fc-data.ssi.com.vn/'
+    auth_type = config.auth_type
+    consumerID = config.consumerID
+    consumerSecret = config.consumerSecret
+    url = config.url
+    stream_url = config.stream_url
 
 config = Config()
 

@@ -106,10 +106,11 @@ def main():
         VALUES (%s, %s, %s, %s, %s)
         """
         conn = psycopg2.connect(
-            host="54.254.170.147",
             database="postgres",
-            user="dbmasteruser",
-            password="ZinNopassword"
+            user=,
+            password=,
+            host=,
+            port='5432'
         )
 
         cur = conn.cursor()

@@ -85,11 +85,11 @@ class WebsocketPipeline():
         
 if __name__ == '__main__':
     conn = psycopg2.connect(
-	database="postgres",
-	user='dbmasteruser',
-	password='ZinNopassword',
-	host='ls-65cbc248f7f6256b66e5d044234532bebe12d75b.cza8koy0izk1.ap-southeast-1.rds.amazonaws.com',
-	port='5432'
+        database="postgres",
+        user=,
+        password=,
+        host=,
+        port='5432'
 	)
 
     symbols = 'X:ALL'
