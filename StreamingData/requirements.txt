@@ -1,0 +1,6 @@
+ssi_fc_data==2.2.1
+pandas
+numpy
+scikit-learn
+tensorflow
+matplotlib

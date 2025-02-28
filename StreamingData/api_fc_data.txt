@@ -1,0 +1,4 @@
+ConsumerID: <your ConsumerID>
+PublicKey: <your PublicKey>
+ConsumerSecret: <your ConsumerSecret>
+PrivateKey: <your PrivateKey>

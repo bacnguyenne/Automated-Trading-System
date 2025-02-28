@@ -1,0 +1,10 @@
+ssi_fc_data==2.2.1
+pandas
+numpy
+scikit-learn
+tensorflow
+matplotlib
+Django==4.2.1
+djangorestframework==3.14.0
+django-allauth==0.52.0
+dj-rest-auth[with_social]==4.0.0
